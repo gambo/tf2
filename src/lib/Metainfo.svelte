@@ -26,16 +26,17 @@
 		li {
 			align-items: center;
 			border-radius: 999rem;
+			border: 1px solid;
 			display: flex;
 			font-family: var(--font-sans);
 			font-size: 0.5rem;
 			font-weight: 600;
-			line-height: 1;
-			padding: 0.5rex 1rch;
+			line-height: 0;
+			padding: 1rex 0.5rch;
 			text-transform: uppercase;
 			&[data-tag='personal'] {
-				background: var(--color-violet-500);
-				color: var(--color-violet-200);
+				background: var(--color-violet-100);
+				color: var(--color-violet-900);
 			}
 		}
 	}

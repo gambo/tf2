@@ -15,3 +15,15 @@
 		{@render children()}
 	</figcaption>
 </figure>
+
+<style>
+	figure {
+		margin: 0.5rem -10rem 2rem;
+		&:before {
+			background: var(--color-orange);
+			margin: 0 -1000px;
+			display: block;
+			content: '';
+		}
+	}
+</style>

@@ -8,7 +8,7 @@
 	let { children }: Props = $props();
 </script>
 
-<div class="m-auto my-8 w-1/2" data-theme="plastic">
+<div class="m-auto my-8 w-[65rch]" data-theme="plastic">
 	{@render children()}
 </div>
 
