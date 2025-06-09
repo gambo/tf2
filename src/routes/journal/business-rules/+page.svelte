@@ -7,10 +7,13 @@
 	import Dinkus from '$lib/Dinkus.svelte';
 	import Back from '$lib/Back.svelte';
 	import Signed from '$lib/Signed.svelte';
+	import Footlink from '$lib/Footlink.svelte';
+	import Footnotes from '$lib/Footnotes.svelte';
+	import Footnote from '$lib/Footnote.svelte';
 </script>
 
 <article>
-	<JournalTitle text="Kia Ora, Aotearoa" />
+	<JournalTitle text="Please tell us what our business rules are." />
 	<Metainfo date={new Date('07 June 2025')} tags={['personal']}></Metainfo>
 	<TitleImage
 		{src}
@@ -24,16 +27,12 @@
 		</Dquote> by <cite><a href="https://www.youtube.com/@BenMikha">Ben Mikha</a></cite>
 	</TitleImage>
 	<p class="cap">
-		New Zealand is my new home! I have family here and many good friends, so it was really only a
-		matter of time. Flying from South Africa, through Hong Kong and landing in Auckland was a
-		journey I'll never forget. New Zealand is a truly beautiful place&mdash;<sup
-			><a href="#footnote1" id="footlink1">01.</a></sup
-		>and the people within have a spirit to match. They are warm, humourous and genuinly open. These
-		moments always promote self-reflection like pruning an overgrown fruit tree&mdash;tying wayward
-		branches upright and eliminating weaker branches to divert growth to the preferred ones.
+		Not too long ago, my typical day would be to review a list of logs that had been submitted by
+		clients. These logs fell into three categories: It was either a BugFix; a new project with
+		feature requests; or a clarification on how the client&CloseCurlyQuote;s business rules were
+		applied in a given workflow.
 	</p>
 	<Dinkus />
-	<h2>What's next?</h2>
 	<p>
 		It's been many year's since I've had the space to journal online. I have quite a few posts I
 		would like to write, and quite a few interviews I would like to publish. I am going to focus on
@@ -43,21 +42,10 @@
 		surround myself with people like this&mdash;and like a fruit tree, maybe get a little sun.
 	</p>
 	<Signed />
-	<ol class="footnotes">
-		<li class="footnote" id="footnote1">
-			Unfortunately, The rise of LLM's and AI seems to have given the Em dash a <Dquote
-				>smell</Dquote
-			> of
-			<a href="https://en.wikipedia.org/wiki/AI_slop"><em><Dquote>Ai slop</Dquote></em></a>. I feel
-			the need to emphasize that on this site, there is
-			<em>no</em>
-			generative AI. Every design element and punctuation mark is a deliberate choice, hand-placed by
-			me. There is no: copy-paste; pre-made theme; plugins or shortcut packages. I don't even use
-			<a href="https://www.npmjs.com/package/smartypants">smartypants</a>
-			to auto-convert my punctuation. Just me typing <code class="inline">&amp;mdash;</code> every
-			time. I view this site as my personal garden, and take more joy in cultivating it. The effort,
-			in this regard, is the reward.
+	<Footnotes>
+		<Footnote id="1">
+			Em dash has been placed by me intentionally.
 			<span class="footnote-meta"><a href="#footlink1"><Back /></a></span>
-		</li>
-	</ol>
+		</Footnote>
+	</Footnotes>
 </article>

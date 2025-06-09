@@ -3,9 +3,9 @@
 @theme {
 	--color-accent: var(--color-purple);
 	--color-back: #ededed;
-	--color-front: #242424;
+	--color-front: #484848;
 	--color-orange: hsl(16, 100%, 50%);
-	--color-purple: hsl(330, 100%, 35%);
+	--color-purple: hsl(330, 95%, 30%);
 	--default-font-family: var(--font-serif);
 	--font-fjalla: 'Fjalla One', serif;
 	--font-geist-mono: 'Geist Mono Variable', monospace;
@@ -117,10 +117,13 @@ article {
 		padding: 0.2rex 0.2rch;
 	}
 	.footnotes {
+		border-top: 1px solid #ddd;
+		padding-top: 2rex;
 		list-style: decimal-leading-zero;
 	}
 	.footnote {
 		font-size: 0.7rem;
+		line-height: 1.5;
 		position: relative;
 		.footnote-meta {
 			position: absolute;

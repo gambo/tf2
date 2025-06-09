@@ -10,7 +10,7 @@
 	<date class="trim">{date.toDateString()}</date>
 	<ul>
 		{#each tags as tag}
-			<li data-tag={tag}>{tag}</li>
+			<li data-tag={tag}>#{tag}</li>
 		{/each}
 	</ul>
 </div>
