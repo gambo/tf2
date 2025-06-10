@@ -1,6 +1,7 @@
 <script module>
-	import image from './titleimage.png';
+	import image from './titleimage.jpg';
 	export const meta: SiteMeta = {
+		ident: 'what-business-rules',
 		title: 'What are our business rules?',
 		date: new Date('10 June 2025'),
 		tags: ['career'],
@@ -11,7 +12,6 @@
 
 <script lang="ts">
 	import Dquote from '$lib/Dquote.svelte';
-	import src from './titleimage.png';
 	import Dinkus from '$lib/Dinkus.svelte';
 	import Back from '$lib/icons/Back.svelte';
 	import Footnote from '$lib/Footnote.svelte';

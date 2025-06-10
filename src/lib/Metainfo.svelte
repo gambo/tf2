@@ -7,9 +7,10 @@
 		tags: SiteTags[];
 	};
 	let { date, tags }: Props = $props();
+	let vtn = date.toString().slice(0, 15).replaceAll(' ', '');
 </script>
 
-<div class="meta">
+<div class="meta" style="view-transition-name:{vtn}">
 	<span class="flex items-center gap-1">
 		<Calendar />
 		<date class="trim">{date.toDateString()}</date>

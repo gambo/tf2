@@ -4,6 +4,7 @@ declare global {
 	type SiteTags = "personal" | "career" | "code" | "design"
 	type SiteDate = Date
 	type SiteMeta = {
+		ident: string
 		date: SiteDate
 		image: string
 		alt: string

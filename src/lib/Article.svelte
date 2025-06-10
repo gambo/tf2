@@ -16,12 +16,12 @@
 		footnotes: Snippet;
 	} & SiteMeta;
 
-	let { alt, bodytext, footnotes, figcaption, image, date, tags, title }: Props = $props();
+	let { ident, alt, bodytext, footnotes, figcaption, image, date, tags, title }: Props = $props();
 </script>
 
 <article>
 	<div class="relative z-10">
-		<JournalTitle text={title} />
+		<JournalTitle text={title} {ident} />
 		<Metainfo {date} {tags}></Metainfo>
 		<TitleImage src={image} {alt}>
 			{@render figcaption()}

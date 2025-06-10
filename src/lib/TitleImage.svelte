@@ -7,9 +7,10 @@
 		children: Snippet;
 	};
 	let { src, alt, children }: Props = $props();
+	let vtn = src.replaceAll('/', '');
 </script>
 
-<figure class="titleImage relative isolate z-10">
+<figure class="titleImage relative isolate z-10" style="view-transition-name: {vtn}">
 	<img {src} {alt} />
 	<figcaption>
 		{@render children()}

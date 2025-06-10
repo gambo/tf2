@@ -2,19 +2,19 @@
 	import type { Snippet } from 'svelte';
 
 	type Props = {
+		ident: string;
 		text: string;
 	};
-	let { text }: Props = $props();
+	let { ident, text }: Props = $props();
 </script>
 
-<h1 data-length={text.length} style="font-size: clamp(2rem, {53 / text.length}rem, 8rem)">
+<h2 style="view-transition-name: header-{ident};" class="text-4xl">
 	{text}
-</h1>
+</h2>
 
 <style>
-	h1 {
+	h2 {
 		text-wrap: pretty;
 		line-height: 1.2;
-		view-transition-name: header;
 	}
 </style>
