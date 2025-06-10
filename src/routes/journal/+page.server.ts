@@ -5,7 +5,6 @@ export async function load() {
     const menu: { url: string, meta: SiteMeta }[] = []
     for (const entry of Object.entries(entries)) {
         const { meta } = await entry[1]()
-        console.log(entry[0])
         const journals = {
             url: entry[0].replace('+page.svelte', '').replace('/src/routes/', ''),
             meta: meta

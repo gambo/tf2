@@ -15,5 +15,6 @@
 	h1 {
 		text-wrap: pretty;
 		line-height: 1.2;
+		view-transition-name: header;
 	}
 </style>

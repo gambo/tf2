@@ -16,6 +16,10 @@
 	--font-serif: 'Source Serif 4';
 }
 
+:root {
+	scrollbar-gutter: stable;
+}
+
 .trim {
 	text-box-edge: cap alphabetic;
 	text-box-trim: trim-both;
