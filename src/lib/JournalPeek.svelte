@@ -3,7 +3,7 @@
 	import Metainfo from './Metainfo.svelte';
 
 	type Props = {
-		style: string;
+		style?: string;
 		url: string;
 		meta: SiteMeta;
 	};

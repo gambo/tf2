@@ -53,6 +53,10 @@
 				background: var(--color-sky-100);
 				color: var(--color-sky-900);
 			}
+			&[data-tag='code'] {
+				background: var(--color-orange-100);
+				color: var(--color-orange-900);
+			}
 		}
 	}
 </style>

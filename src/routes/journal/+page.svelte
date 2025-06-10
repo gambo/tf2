@@ -12,10 +12,12 @@
 </script>
 
 <Splash color="var(--color-amber-500)" />
-<div class="overview relative mx-auto w-3/4">
+<div class="relative mx-auto grid w-3/4 max-w-[1000px] grid-cols-3 gap-4">
+	<h2 class="font-fjalla -z-10 col-span-2 mt-8 mb-4 text-right text-6xl">Journal Entries</h2>
 	{#each data.menu as entry, i}
+		{@const span = 2 - i < 1 ? 1 : 2 - i}
 		{@render first(i)}
-		<JournalPeek {...entry} style="grid-area:g{i + 1}" />
+		<JournalPeek {...entry} style="grid-column: span {span} / span {span}" />
 	{/each}
 </div>
 
@@ -26,24 +28,13 @@
 {/snippet}
 
 <style>
-	.overview {
-		display: grid;
-		grid-template-areas:
-			'g1 g1 g2'
-			'g1 g1 g2'
-			'g3 g4 g5';
-		gap: 1rem;
-		&:first-child {
-			outline: 4px solid red;
-		}
-	}
 	.latest {
 		position: absolute;
 		background: var(--color-sky-200);
 		color: var(--color-sky-900);
 		padding: 0.5rem 2rem;
 		transform-origin: top right;
-		translate: -60%;
+		translate: -4rem 7.7rem;
 		rotate: -90deg;
 		clip-path: polygon(10% 0%, 0 50%, 10% 100%, 100% 100%, 100% 0);
 		font-family: var(--font-inter-tight);

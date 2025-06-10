@@ -86,11 +86,15 @@ article {
 		margin: 4rcap 0 2rcap 0;
 		text-transform: uppercase;
 	}
-	h2 {
+	h2,
+	h3 {
 		font-family: var(--font-fjalla);
 		font-size: 3rem;
 		font-weight: bold;
 		margin: 4rex 0 2rex 0;
+	}
+	h3 {
+		font-size: 2rem;
 	}
 	.cap:first-letter {
 		--repeating-linear-gradient: transparent 0, transparent 3px, var(--color-accent) 4px;

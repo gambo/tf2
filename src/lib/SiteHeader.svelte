@@ -18,7 +18,13 @@
 
 <header class="font-inter-tight mx-auto w-[65rch] p-2">
 	<div class="mx-auto flex items-center justify-between gap-2">
-		<Logo />
+		<div class="flex items-center gap-1">
+			<Logo />
+			<div class="font-inter-tight text-front grid gap-[3px] text-sm tracking-wider uppercase">
+				<span class="trim">Shaun</span>
+				<span class="trim">Richardson</span>
+			</div>
+		</div>
 		<menu>
 			<ol class="flex gap-1">
 				{#each menu as { title, link }, i}
