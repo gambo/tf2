@@ -1,13 +1,12 @@
 <script lang="ts">
+	import SiteHeader from '$lib/SiteHeader.svelte';
 	// import '@fontsource-variable/source-serif-4';
 	// import '@fontsource/source-sans-pro';
 	import '@fontsource-variable/inter-tight';
 	import '@fontsource/fjalla-one';
 	import '@fontsource-variable/merriweather';
 	import '@fontsource-variable/geist-mono';
-	import Logo from '$lib/Logo.svelte';
 	import '../app.css';
-	import { poly_bg } from '$lib';
 
 	let { children } = $props();
 	let menu: { title: string; link: string }[] = [
@@ -17,25 +16,6 @@
 	];
 </script>
 
-<header class="font-inter-tight mx-auto w-[65ch] p-2">
-	<div class="mx-auto flex items-center justify-between gap-2">
-		<Logo />
-		<menu>
-			<ol class="flex gap-1">
-				{#each menu as { title, link }, i}
-					{@const leading_number = String(i + 1).padStart(2, '0')}
-					<li>
-						<a
-							class="text-accent hover:bg-accent grid px-3 py-2 transition-all hover:text-white"
-							href={link}
-						>
-							<span class="text-right text-xs text-[8px]">{leading_number}</span>
-							<span>{title}</span>
-						</a>
-					</li>
-				{/each}
-			</ol>
-		</menu>
-	</div>
-</header>
+<div class="pointer-events-none fixed inset-0 bg-[url('/noise.png')] opacity-[0.04]"></div>
+<SiteHeader />
 {@render children()}

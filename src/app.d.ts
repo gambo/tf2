@@ -3,6 +3,13 @@
 declare global {
 	type SiteTags = "personal" | "career" | "code" | "design"
 	type SiteDate = Date
+	type SiteMeta = {
+		date: SiteDate
+		image: string
+		alt: string
+		tags: SiteTags[]
+		title: string
+	}
 	namespace App {
 		// interface Error {}
 		// interface Locals {}

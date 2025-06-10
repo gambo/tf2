@@ -9,7 +9,7 @@
 	let { src, alt, children }: Props = $props();
 </script>
 
-<figure class="titleImage">
+<figure class="titleImage relative isolate z-10">
 	<img {src} {alt} />
 	<figcaption>
 		{@render children()}
@@ -19,11 +19,6 @@
 <style>
 	figure {
 		margin: 0.5rem -10rem 2rem;
-		&:before {
-			background: var(--color-orange);
-			margin: 0 -1000px;
-			display: block;
-			content: '';
-		}
+		background-color: white;
 	}
 </style>

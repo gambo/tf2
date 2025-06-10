@@ -10,6 +10,3 @@
 <ol class="footnotes">
 	{@render children()}
 </ol>
-
-<style lang="postcss">
-</style>
