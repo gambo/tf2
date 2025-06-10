@@ -74,25 +74,6 @@ article {
 			text-indent: 2rem;
 		}
 	}
-	figure {
-		color: #242424;
-		border: 1px solid #ccc;
-		background: #ececec;
-		box-shadow: 0 0 4px rgb(0 0 0 / 0.08);
-		padding: 1rem;
-		padding-bottom: 0;
-		margin-bottom: 2rem;
-		img {
-			border-radius: 0.5rex;
-			border: 1px solid rgb(0 0 0 / 10%);
-		}
-		figcaption {
-			color: #666;
-			font-size: 0.8rem;
-			margin-bottom: 2rex;
-			padding: 1rex 0;
-		}
-	}
 	a {
 		color: var(--color-accent);
 		text-decoration: underline;
@@ -127,8 +108,8 @@ article {
 		position: relative;
 		.footnote-meta {
 			position: absolute;
-			top: -0.25rem;
-			right: -2rem;
+			top: 0;
+			right: -5rem;
 		}
 	}
 	.footnote:target {

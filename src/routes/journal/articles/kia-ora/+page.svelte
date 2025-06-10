@@ -34,7 +34,7 @@
 			the people within have a spirit to match. They are warm, humourous and genuinly open.
 		</p>
 		<p>
-			These moments always promote self-correction of sorts, like pruning an overgrown fruit
+			These moments always promote a self-assessment of sorts, like pruning an overgrown fruit
 			tree&mdash;tying wayward branches upright and eliminating weaker branches to divert growth to
 			the preferred ones.
 		</p>

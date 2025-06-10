@@ -1,4 +1,7 @@
 <script lang="ts">
+	import Calendar from './icons/Calendar.svelte';
+	import Tags from './icons/Tags.svelte';
+
 	type Props = {
 		date: SiteDate;
 		tags: SiteTags[];
@@ -7,12 +10,18 @@
 </script>
 
 <div class="meta">
-	<date class="trim">{date.toDateString()}</date>
-	<ul>
-		{#each tags as tag}
-			<li data-tag={tag}>#{tag}</li>
-		{/each}
-	</ul>
+	<span class="flex items-center gap-1">
+		<Calendar />
+		<date class="trim">{date.toDateString()}</date>
+	</span>
+	<span class="flex items-center gap-1">
+		<Tags />
+		<ul>
+			{#each tags as tag}
+				<li data-tag={tag}>#{tag}</li>
+			{/each}
+		</ul>
+	</span>
 </div>
 
 <style>
@@ -37,6 +46,10 @@
 			&[data-tag='personal'] {
 				background: var(--color-violet-100);
 				color: var(--color-violet-900);
+			}
+			&[data-tag='career'] {
+				background: var(--color-sky-100);
+				color: var(--color-sky-900);
 			}
 		}
 	}
