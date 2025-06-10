@@ -8,7 +8,7 @@
 	let { ident, text }: Props = $props();
 </script>
 
-<h2 style="view-transition-name: header-{ident};" class="text-4xl">
+<h2 style="view-transition-name: header-{ident};">
 	{text}
 </h2>
 
@@ -16,5 +16,7 @@
 	h2 {
 		text-wrap: pretty;
 		line-height: 1.2;
+		margin-inline: -10rem;
+		text-align: center;
 	}
 </style>

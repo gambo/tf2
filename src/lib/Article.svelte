@@ -22,8 +22,8 @@
 <article>
 	<div class="relative z-10">
 		<JournalTitle text={title} {ident} />
-		<Metainfo {date} {tags}></Metainfo>
-		<TitleImage src={image} {alt}>
+		<Metainfo {ident} {date} {tags}></Metainfo>
+		<TitleImage src={image} {alt} {ident}>
 			{@render figcaption()}
 		</TitleImage>
 	</div>

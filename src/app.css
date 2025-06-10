@@ -42,7 +42,7 @@
 		transform: translateX(-30px);
 	}
 }
-@media (prefers-reduced-motion: no-preference) {
+/* @media (prefers-reduced-motion: no-preference) {
 	:root::view-transition-old(root) {
 		animation:
 			90ms cubic-bezier(0.4, 0, 1, 1) both fade-out,
@@ -54,7 +54,7 @@
 			210ms cubic-bezier(0, 0, 0.2, 1) 90ms both fade-in,
 			300ms cubic-bezier(0.4, 0, 0.2, 1) both slide-from-right;
 	}
-}
+} */
 .trim {
 	text-box-edge: cap alphabetic;
 	text-box-trim: trim-both;
@@ -88,7 +88,7 @@ article {
 	}
 	h2 {
 		font-family: var(--font-fjalla);
-		font-size: 1.5rem;
+		font-size: 3rem;
 		font-weight: bold;
 		margin: 4rex 0 2rex 0;
 	}

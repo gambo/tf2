@@ -2,16 +2,20 @@
 	import type { Snippet } from 'svelte';
 
 	type Props = {
+		ident: string;
 		src: string;
 		alt: string;
 		children: Snippet;
 	};
-	let { src, alt, children }: Props = $props();
-	let vtn = src.replaceAll('/', '');
+	let { src, ident, alt, children }: Props = $props();
 </script>
 
-<figure class="titleImage relative isolate z-10" style="view-transition-name: {vtn}">
-	<img {src} {alt} />
+<figure
+	class="titleImage relative isolate z-10"
+	style="view-transition-name: image-{ident}; --image: url({src})"
+>
+	<div class="aspect-[16/7] [background-image:var(--image)] bg-cover bg-center"></div>
+	<!-- <img {src} {alt} /> -->
 	<figcaption>
 		{@render children()}
 	</figcaption>

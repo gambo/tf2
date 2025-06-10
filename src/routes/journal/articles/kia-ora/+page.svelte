@@ -1,6 +1,7 @@
 <script module>
 	import image from './titleimage.png';
 	export const meta: SiteMeta = {
+		ident: 'kia',
 		title: 'Kia Ora, Aotearoa',
 		date: new Date('07 June 2025'),
 		tags: ['personal'],

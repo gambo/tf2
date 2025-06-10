@@ -5,12 +5,12 @@
 	type Props = {
 		date: SiteDate;
 		tags: SiteTags[];
+		ident: string;
 	};
-	let { date, tags }: Props = $props();
-	let vtn = date.toString().slice(0, 15).replaceAll(' ', '');
+	let { date, tags, ident }: Props = $props();
 </script>
 
-<div class="meta" style="view-transition-name:{vtn}">
+<div class="meta" style="view-transition-name:{ident}">
 	<span class="flex items-center gap-1">
 		<Calendar />
 		<date class="trim">{date.toDateString()}</date>
@@ -27,6 +27,7 @@
 
 <style>
 	.meta {
+		font-family: var(--font-merriweather);
 		align-items: center;
 		color: #777;
 		display: flex;
