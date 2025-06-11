@@ -13,7 +13,9 @@
 
 <Splash color="var(--color-amber-500)" />
 <div class="relative mx-auto grid w-3/4 max-w-[1000px] grid-cols-3 gap-4">
-	<h2 class="font-fjalla -z-10 col-span-2 mt-8 mb-4 text-right text-6xl">Journal Entries</h2>
+	<h2 class="font-fjalla col-span-2 mt-8 mb-4 text-right text-6xl text-shadow-[2px_2px_white]">
+		Journal Entries
+	</h2>
 	{#each data.menu as entry, i}
 		{@const span = 2 - i < 1 ? 1 : 2 - i}
 		{@render first(i)}

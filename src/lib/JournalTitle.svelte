@@ -16,7 +16,7 @@
 	h2 {
 		text-wrap: pretty;
 		line-height: 1.2;
-		margin-inline: -10rem;
+		margin-inline: -20rem;
 		text-align: center;
 	}
 </style>
