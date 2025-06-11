@@ -28,5 +28,8 @@
 </script>
 
 <div class="pointer-events-none fixed inset-0 bg-[url('/noise.png')] opacity-[0.04]"></div>
+<div
+	class="max-auto pointer-events-none fixed left-1/2 h-screen w-[71ch] -translate-x-1/2 border-r border-l border-dashed border-black/30"
+></div>
 <SiteHeader />
 {@render children()}

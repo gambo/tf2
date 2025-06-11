@@ -1,5 +1,5 @@
 <script lang="ts">
-	import type { Attachment } from 'svelte/attachments';
+	import { scrollY } from 'svelte/reactivity/window';
 	import Typewriter from './Typewriter.svelte';
 
 	let { title = '', command = '', output = '', typingSpeed = 100, delay } = $props();
@@ -47,6 +47,7 @@
 <style>
 	.wrap {
 		border-radius: 1rem;
+		clip-path: border-box;
 		box-shadow: 0 0px 10px rgb(0 0 0 / 20%);
 		padding: 4rem 0 0 4rem;
 		--black: rgb(0 0 0 / 8%);

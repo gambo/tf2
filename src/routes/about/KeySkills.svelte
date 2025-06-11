@@ -1,23 +1,23 @@
 <script lang="ts">
+	import { fly } from 'svelte/transition';
 	import Terminal from './Terminal.svelte';
 </script>
 
-<div class="">
+<div in:fly={{ x: -30, delay: 300 }}>
 	<Terminal
-		delay={1600}
+		typingSpeed={30}
+		delay={300}
+		title="Key Skills"
 		command="cat ~/.profile"
 		output={`
 Key Skills
 ==========
-
 - Typescript
 - Client & Managerial experience
 - Docker, Microservices
 - Automated Testing, Continuous integration
 - Design, CSS and JS interactivity
 - API development
-- Cloud services, Azure
-
-    `}
+`}
 	/>
 </div>

@@ -25,4 +25,4 @@
 	});
 </script>
 
-{output}
+{@html output}

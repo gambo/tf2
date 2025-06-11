@@ -1,4 +1,5 @@
 <script lang="ts">
+	import Splash from '$lib/Splash.svelte';
 	import type { Snippet } from 'svelte';
 
 	type Props = {
@@ -6,3 +7,5 @@
 	};
 	let { children }: Props = $props();
 </script>
+
+<Splash color="var(--color-orange-500)" />
