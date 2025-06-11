@@ -13,6 +13,7 @@
 		{ title: 'Home', link: '/' },
 		{ title: 'About', link: '/about' },
 		{ title: 'Journal', link: '/journal' },
+		{ title: 'Code', link: '/apps' },
 	];
 </script>
 
