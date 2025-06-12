@@ -27,6 +27,7 @@
 		"@sveltejs/kit": "^2.21.4",
 		"@sveltejs/vite-plugin-svelte": "^5.1.0",
 		"@tailwindcss/vite": "^4.1.8",
+		"animejs": "^4.0.2",
 		"dot-prop": "^9.0.0",
 		"eslint": "^9.28.0",
 		"eslint-config-prettier": "^10.1.5",

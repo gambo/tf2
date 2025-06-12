@@ -13,7 +13,7 @@
 <div class="meta" style="view-transition-name:{ident}">
 	<span class="flex items-center gap-1">
 		<Calendar />
-		<date class="trim">{date.toDateString()}</date>
+		<date class="trim font-inter-tight">{date.toDateString()}</date>
 	</span>
 	<span class="flex items-center gap-1">
 		<Tags />
