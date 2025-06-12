@@ -1,10 +1,12 @@
 <script lang="ts">
-	type Props = { color: string };
-	let { color = '#bada55' } = $props();
+	import type { Snippet } from 'svelte';
+
+	type Props = { color: string; children: Snippet };
+	let { color = '#bada55', children }: Props = $props();
 </script>
 
 <div style:--color={color} class="w-screen overflow-hidden">
-	<div class="splash absolute inset-0 top-20 h-120"></div>
+	<div class="splash absolute inset-0 top-20 h-120">{@render children?.()}</div>
 </div>
 
 <style>
