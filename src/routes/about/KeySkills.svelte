@@ -3,7 +3,7 @@
 	import Terminal from './Terminal.svelte';
 </script>
 
-<div in:fly={{ x: -30, delay: 300 }}>
+<div in:fly={{ x: -30, delay: 300 }} class="">
 	<Terminal
 		typingSpeed={30}
 		delay={300}

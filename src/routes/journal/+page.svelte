@@ -3,6 +3,7 @@
 	import type { PageData } from './$types';
 	import JournalPeek from '$lib/JournalPeek.svelte';
 	import Splash from '$lib/Splash.svelte';
+	import { fade, fly } from 'svelte/transition';
 
 	type Props = {
 		data: PageData;
@@ -21,7 +22,9 @@
 	{#each data.menu as entry, i}
 		{@const span = 2 - i < 1 ? 1 : 2 - i}
 		{@render first(i)}
-		<JournalPeek {...entry} style="grid-column: span {span} / span {span}" />
+		<div in:fade|global={{ delay: 300 * i }} style="grid-column: span {span} / span {span}">
+			<JournalPeek {...entry} />
+		</div>
 	{/each}
 </div>
 

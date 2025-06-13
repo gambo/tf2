@@ -1,7 +1,7 @@
 <script lang="ts">
 	import type { Snippet } from 'svelte';
 
-	type Props = { color: string; children: Snippet };
+	type Props = { color: string; children?: Snippet };
 	let { color = '#bada55', children }: Props = $props();
 </script>
 
