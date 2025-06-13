@@ -8,6 +8,7 @@
 	import '@fontsource-variable/geist-mono';
 	import '../app.css';
 	import { onNavigate } from '$app/navigation';
+	import SiteFooter from '$lib/SiteFooter.svelte';
 
 	let { children } = $props();
 	let menu: { title: string; link: string }[] = [
@@ -33,3 +34,4 @@
 ></div>
 <SiteHeader />
 {@render children()}
+<SiteFooter />
