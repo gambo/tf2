@@ -26,17 +26,6 @@
 <style>
 	.titleimage {
 		border-radius: 1rex;
-		background-image:
-			linear-gradient(
-				45deg,
-				transparent,
-				rgb(255 255 255 / 30%) 20%,
-				transparent 20%,
-				rgb(255 255 255 / 30%) 70%,
-				transparent 70%
-			),
-			radial-gradient(circle at 10% 10%, rgb(255 255 255 / 20%), rgb(0 0 0 / 20%)), var(--image);
-		background-blend-mode: soft-light, color-burn;
 	}
 	.wrap {
 		--pad: 0.2rex;
@@ -49,9 +38,6 @@
 	}
 	figure {
 		background: #fff;
-		box-shadow:
-			0 0 4px rgb(0 0 0 / 0.08),
-			inset 0 2px 4px white;
 		color: #242424;
 		margin: 0.5rem -10rem 2rem;
 		padding-bottom: 0;

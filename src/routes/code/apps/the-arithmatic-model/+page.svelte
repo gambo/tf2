@@ -16,23 +16,18 @@
 	import Back from '$lib/icons/Back.svelte';
 	import Footnote from '$lib/Footnote.svelte';
 	import Article from '$lib/Article.svelte';
-import { codeToHtml } from 'shiki'
-
-const code = 'const a = 1' // input code
-const html = $derived(codeToHtml(code, {
-  lang: 'javascript',
-  theme: 'vitesse-dark'
-}))
-
+	import Code from '$lib/Code.svelte';
 </script>
 
 <Article {...meta}>
-	{#snippet figcaption()}
-	{/snippet}
+	{#snippet figcaption()}{/snippet}
 	{#snippet bodytext()}
-	{#await html then x}
-	<pre><code>{@html x}</code></pre>
-	{/await}
+		<Code
+			>{`
+		const Adressbook = []
+		const Adress = {address: '123 Carandan road'}
+`}
+		</Code>
 	{/snippet}
 	{#snippet footnotes()}
 		<Footnote id="1">
@@ -41,9 +36,3 @@ const html = $derived(codeToHtml(code, {
 		</Footnote>
 	{/snippet}
 </Article>
-
-<style>
-	:global(.shiki) {
-		padding: 1rem;
-	}
-</style>

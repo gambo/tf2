@@ -27,7 +27,6 @@
 			{@render figcaption()}
 		</TitleImage>
 	</div>
-	<Splash />
 	{@render bodytext()}
 	<Signed />
 	<Footnotes>

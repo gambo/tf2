@@ -7,6 +7,6 @@
 	let { children }: Props = $props();
 </script>
 
-<ol class="footnotes">
+<ol class="footnotes ml-4">
 	{@render children()}
 </ol>

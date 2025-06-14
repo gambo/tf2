@@ -11,5 +11,5 @@ export async function load() {
         }
         menu.push(journals)
     }
-    return { menu }
+    return { menu: menu.sort((x, y) => x.meta.date <= y.meta.date ? 1 : -1) }
 }

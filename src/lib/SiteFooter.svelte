@@ -1,4 +1,6 @@
 <script lang="ts">
+	import Socials from './Socials.svelte';
+
 	// import '@fontsource-variable/source-serif-4';
 	// import '@fontsource/source-sans-pro';
 	// import '@fontsource-variable/inter-tight';
@@ -17,6 +19,7 @@
 				<span class="trim">Richardson</span>
 			</div>
 		</a>
+		<Socials></Socials>
 		<span style="font-size: 12px;">
 			Copyright © 1999–{new Date().getFullYear()} Shaun Richardson. All rights reserved.
 		</span>

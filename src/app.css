@@ -145,21 +145,4 @@ article {
 		padding-top: 2rex;
 		list-style: decimal-leading-zero;
 	}
-	.footnote {
-		font-size: 0.7rem;
-		line-height: 1.5;
-		position: relative;
-		.footnote-meta {
-			position: absolute;
-			top: 0;
-			right: -5rem;
-		}
-	}
-	.footnote:target {
-		background: lightgoldenrodyellow;
-		border: 1px dashed;
-		margin: -1rem;
-		margin-bottom: 2rem;
-		padding: 1rem;
-	}
 }
