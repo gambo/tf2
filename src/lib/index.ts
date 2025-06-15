@@ -31,3 +31,7 @@ export const poly_bg: Attachment<HTMLElement> = (node) => {
     const clipPath = `polygon(${polystring})`
     node.style.clipPath = clipPath;
 }
+
+export const slugify = (str: string) => {
+    return str.replaceAll(/[^A-Za-z0-9]+/g, '-')
+}

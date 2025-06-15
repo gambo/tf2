@@ -8,5 +8,7 @@ export const code: Attachment<HTMLElement> = (node) => {
             theme: 'vitesse-dark',
         }),
     );
-    html.then(x => node.innerHTML = x)
+    html.then(x => {
+        node.innerHTML = x
+    })
 };

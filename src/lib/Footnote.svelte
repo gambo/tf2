@@ -10,27 +10,25 @@
 </script>
 
 <li class="footnote" id="footnote{id}">
-	{@render children()}
-	<span class="footnote-meta"
-		><a
-			href="#footlink{id}"
-			title="Back to article"
-			class="font-inter-tight flex items-center gap-1"
-			><Back class="w-3" /><span class="text-[0.7rem]">Jump Back</span></a
-		></span
-	>
+	<div class="flex gap-2">
+		<span>
+			{@render children()}
+		</span>
+		<span class="footnote-meta">
+			<a
+				href="#footlink{id}"
+				title="Back to article"
+				class="font-inter-tight color-slate-800 flex items-center gap-1 rounded-md bg-slate-200 p-[1rch] shadow-sm"
+				><Back class="w-3" /></a
+			>
+		</span>
+	</div>
 </li>
 
 <style>
 	.footnote {
 		font-size: 0.7rem;
 		line-height: 1.5;
-		position: relative;
-		.footnote-meta {
-			position: absolute;
-			top: 0;
-			right: -5rem;
-		}
 	}
 	.footnote:target {
 		background: lightgoldenrodyellow;

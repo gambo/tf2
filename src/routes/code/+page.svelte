@@ -17,7 +17,7 @@
 >
 	Code & Apps
 </h2>
-<div class="relative mx-auto grid w-3/4 max-w-[1000px] grid-cols-3 gap-4">
+<div class="relative mx-auto grid w-3/4 max-w-[1000px] grid-cols-3">
 	{#each data.menu as entry, i}
 		{@const span = 2 - i < 1 ? 1 : 2 - i}
 		{@render first(i)}

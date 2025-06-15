@@ -24,17 +24,9 @@
 </figure>
 
 <style>
-	.titleimage {
-		border-radius: 1rex;
-	}
 	.wrap {
 		--pad: 0.2rex;
-		--border-radius: calc(1rex + var(--pad));
-		background-image: radial-gradient(ellipse at top, #fff, #ddd);
-		outline: 1px solid rgb(0 0 0 / 10%);
-		border-radius: var(--border-radius);
 		padding: var(--pad);
-		box-shadow: 0 0 4px rgb(0 0 0 / 8%);
 	}
 	figure {
 		background: #fff;
@@ -44,6 +36,7 @@
 		padding: 1rem;
 		border-radius: 0.5rex;
 		border: 1px solid rgb(0 0 0 / 25%);
+		box-shadow: 0 30px 0px -23px #bbbbbb77;
 	}
 	figcaption {
 		color: #666;

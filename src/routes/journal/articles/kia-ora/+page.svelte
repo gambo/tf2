@@ -16,6 +16,7 @@
 	import Footlink from '$lib/Footlink.svelte';
 	import Footnote from '$lib/Footnote.svelte';
 	import Article from '$lib/Article.svelte';
+	import Toc from '$lib/TOC.svelte';
 </script>
 
 <Article {...meta}>
@@ -28,6 +29,7 @@
 		</Dquote> by <cite><a href="https://www.youtube.com/@BenMikha">Ben Mikha</a></cite>
 	{/snippet}
 	{#snippet bodytext()}
+		<h2>A New Home</h2>
 		<p class="cap">
 			New Zealand is my new home! I have family here and many good friends, so it was really only a
 			matter of time. Flying from South Africa, through Hong Kong and landing in Auckland was a
@@ -40,7 +42,7 @@
 			the preferred ones.
 		</p>
 		<Dinkus />
-		<h2>What's next?</h2>
+		<h3>What's next?</h3>
 		<p>
 			It's been many year's since I've had the space to journal online. I have quite a few posts I
 			would like to write, and quite a few interviews I would like to publish. I am going to focus

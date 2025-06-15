@@ -11,7 +11,7 @@
 </script>
 
 <a href={url} style="--image:url({meta.image}); {style}">
-	<div class="flex flex-col gap-4 border border-slate-300 bg-white p-4 shadow-2xl">
+	<div class="flex flex-col gap-4 bg-white p-4">
 		<div
 			style="view-transition-name: image-{meta.ident}"
 			class="min-h-40 rounded-sm border border-slate-900/30 [background-image:var(--image)] bg-cover"

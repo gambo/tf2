@@ -35,7 +35,7 @@
 							class="text-accent hover:bg-accent grid px-3 py-2 transition-all hover:text-white"
 							href={link}
 						>
-							<span class="text-right text-xs text-[8px]">{leading_number}</span>
+							<span class="text-right text-xs text-[8px] transition-all">{leading_number}</span>
 							<span>{title}</span>
 						</a>
 					</li>
