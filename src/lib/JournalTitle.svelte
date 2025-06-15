@@ -8,12 +8,12 @@
 	let { ident, text }: Props = $props();
 </script>
 
-<h2 style="view-transition-name: header-{ident};">
+<h1 style="view-transition-name: header-{ident};">
 	{text}
-</h2>
+</h1>
 
 <style>
-	h2 {
+	h1 {
 		text-wrap: pretty;
 		line-height: 1.2;
 		margin-inline: -20rem;

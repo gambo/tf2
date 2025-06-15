@@ -23,7 +23,6 @@
 			var(--color2) 4px,
 			transparent 4px
 		);
-		clip-path: polygon(0 30%, 100% 0, 100% 70%, 0 100%);
-		background-blend-mode: hard-light, normal, normal;
+		clip-path: polygon(0 var(--offset, 30%), 100% 0, 100% calc(100% - var(--offset, 30%)), 0 100%);
 	}
 </style>

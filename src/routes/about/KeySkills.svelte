@@ -8,7 +8,7 @@
 		typingSpeed={30}
 		delay={300}
 		title="Key Skills"
-		command="cat ~/.profile"
+		command="cat ~/.profile > ./work/skills.md"
 		output={`
 Key Skills
 ==========

@@ -34,11 +34,11 @@
 </div>
 <article class="mx-auto mt-20 w-[65rch]">
 	<Dinkus />
-	<p class="cap">
-		I have worked for many years in heaviliy regulated industries like Mining Manufacturing and
-		FinTech as a full-stack software developer. I love building software for the web.
+	<p>
+		You can find out more about me <a href="/about">here</a>, but If you want to tuck into some good
+		stuff, I would recommend reading about my <a href="/">site-design breakdown</a>, or a short
+		entry about my <a href="location">location</a>
 	</p>
-	<p></p>
 </article>
 
 <style>

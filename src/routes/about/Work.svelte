@@ -5,7 +5,7 @@
 > vite dev
 
 
-  <span class="text-green-700">VITE v6.3.5</span>  <span class="text-neutral-700">ready in</span> 1233 ms
+  <span class="text-green-700 font-bold">VITE v6.3.5</span>  <span class="text-neutral-700">ready in</span> 1233 ms
 
   ➜  <b class="text-white">Local:</b>   http://localhost:5173/
   ➜  Network: use --host to expose

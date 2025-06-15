@@ -10,42 +10,40 @@
 	};
 </script>
 
-<div class="wrap">
-	<div class="terminal w-full">
-		<div class="flex items-center gap-2 border-b border-b-neutral-900/70 px-3 py-2">
-			<div class="flex gap-2">
-				<span class="disc rounded-full bg-[#ff5f56]"></span>
-				<span class="disc rounded-full bg-[#ffbf55]"></span>
-				<span class="disc rounded-full bg-[#27c274]"></span>
-			</div>
-			<div class="ml-2 font-mono text-sm text-neutral-400">{title}</div>
+<div class="terminal w-full">
+	<div class="flex items-center gap-2 border-b border-b-neutral-900/70 px-3 py-2">
+		<div class="flex gap-2">
+			<span class="disc rounded-full bg-[#ff5f56]"></span>
+			<span class="disc rounded-full bg-[#ffbf55]"></span>
+			<span class="disc rounded-full bg-[#27c274]"></span>
 		</div>
-		<div class="body">
-			<div class="grid">
-				<div class="flex gap-2">
-					<span class="prompt">$</span>
-					<span class="command"
-						><Typewriter
-							delay={0}
-							speed={typingSpeed}
-							text={command}
-							onstop={() => (cursor = false)}
-						/></span
-					>
-					{#if cursor}
-						<span class="cursor">█</span>
-					{/if}
-				</div>
-				<div bind:this={el} class="output h-50 overflow-y-scroll">
-					<Typewriter text={output} {delay} speed={10} onstop={scroll} />
-				</div>
+		<div class="ml-2 font-mono text-sm text-neutral-400">{title}</div>
+	</div>
+	<div class="body">
+		<div class="grid">
+			<div class="flex gap-2">
+				<span class="prompt">$</span>
+				<span class="command"
+					><Typewriter
+						delay={0}
+						speed={typingSpeed}
+						text={command}
+						onstop={() => (cursor = false)}
+					/></span
+				>
+				{#if cursor}
+					<span class="cursor">█</span>
+				{/if}
+			</div>
+			<div bind:this={el} class="output h-50 overflow-y-scroll">
+				<Typewriter text={output} {delay} speed={10} onstop={scroll} />
 			</div>
 		</div>
 	</div>
 </div>
 
 <style>
-	.wrap {
+	/* .wrap {
 		border-radius: 1rem;
 		clip-path: border-box;
 		box-shadow: 0 0px 10px rgb(0 0 0 / 20%);
@@ -60,7 +58,7 @@
 			10px 10px,
 			10px 10px,
 			100%;
-	}
+	} */
 	.terminal {
 		width: 100%;
 		border-radius: 0.5rem 0 0 0;

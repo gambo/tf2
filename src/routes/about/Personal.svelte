@@ -18,7 +18,7 @@ Interests: <b>Programming & Technology</b>
 		title="Bio"
 		typingSpeed={30}
 		delay={2000}
-		command="curl -i https://shaun.im/bio.txt"
+		command="curl -i https://shaun.click/bio.txt > ./work/bio.md"
 		{output}
 	/>
 </div>

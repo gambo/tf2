@@ -33,7 +33,7 @@
 	};
 </script>
 
-<article>
+<article class="">
 	<div class="relative z-10">
 		<JournalTitle text={title} {ident} />
 		<Metainfo {ident} {date} {tags}></Metainfo>

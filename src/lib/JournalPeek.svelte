@@ -10,7 +10,7 @@
 	let { url, style, meta }: Props = $props();
 </script>
 
-<a href={url} style="--image:url({meta.image}); {style}">
+<a href={url} style="--image:url({meta.image}); {style}" class="">
 	<div class="flex flex-col gap-4 bg-white p-4">
 		<div
 			style="view-transition-name: image-{meta.ident}"
