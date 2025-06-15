@@ -10,18 +10,22 @@
 	import Logo from '$lib/Logo.svelte';
 </script>
 
-<footer class="font-inter-tight mx-auto mt-60 w-[65rch] p-2">
+<footer class="font-inter-tight mx-auto mt-60 mb-12 w-[65rch] p-2">
 	<div class="mx-auto flex items-end justify-between gap-2">
-		<a href="/" class="flex items-center gap-1">
-			<Logo />
-			<div class="font-inter-tight text-front grid gap-[3px] text-sm tracking-wider uppercase">
-				<span class="trim">Shaun</span>
-				<span class="trim">Richardson</span>
+		<div class="grid gap-2">
+			<a href="/" class="flex items-center gap-1">
+				<Logo />
+				<div class="font-inter-tight text-front grid gap-[3px] text-sm tracking-wider uppercase">
+					<span class="trim">Shaun</span>
+					<span class="trim">Richardson</span>
+				</div>
+			</a>
+			<div class="-ml-2">
+				<Socials></Socials>
 			</div>
-		</a>
-		<Socials></Socials>
-		<span style="font-size: 12px;">
-			Copyright © 1999–{new Date().getFullYear()} Shaun Richardson. All rights reserved.
-		</span>
+			<span style="font-size: 12px;">
+				Copyright © 1999–{new Date().getFullYear()} Shaun Richardson. All rights reserved.
+			</span>
+		</div>
 	</div>
 </footer>

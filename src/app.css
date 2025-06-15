@@ -169,3 +169,13 @@ article {
 		list-style: decimal-leading-zero;
 	}
 }
+
+.paper {
+	--color2: hsl(from var(--color) h calc(s + 10) calc(l + 10));
+	background: repeating-linear-gradient(
+		90deg,
+		var(--color) 0px,
+		var(--color2) 4px,
+		transparent 4px
+	);
+}

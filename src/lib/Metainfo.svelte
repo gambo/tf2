@@ -11,11 +11,11 @@
 </script>
 
 <div class="meta" style="view-transition-name:{ident}">
-	<span class="flex items-center gap-1">
+	<span class="text-front flex items-center gap-1">
 		<Calendar />
 		<date class="trim font-inter-tight">{date.toDateString()}</date>
 	</span>
-	<span class="flex items-center gap-1">
+	<span class="text-front flex items-center gap-1">
 		<Tags />
 		<ul>
 			{#each tags as tag}

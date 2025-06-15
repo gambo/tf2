@@ -7,9 +7,10 @@
 
 <div style:--color={color} class="w-screen overflow-hidden text-slate-900/10">
 	<div class="pile">
-		<div class="absolute top-20 h-px w-full -rotate-4 border-t"></div>
+		<div class="absolute top-20 h-px w-full -rotate-3 border-t"></div>
 		<div class="splash absolute inset-0 top-20 h-120">{@render children?.()}</div>
 		<div class="absolute bottom-30 h-px w-full rotate-6 border-t"></div>
+		<div class="absolute bottom-40 h-px w-full -rotate-3 border-t"></div>
 	</div>
 </div>
 
