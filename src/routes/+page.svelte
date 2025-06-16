@@ -12,7 +12,7 @@
 	let { children }: Props = $props();
 </script>
 
-<Splash color="var(--color-orange-500)">
+<Splash color="hsl(16 100 50)">
 	<img
 		in:fly={{ x: -20, delay: 600 }}
 		src="/me.png"
@@ -30,15 +30,32 @@
 	class="byline font-inter-tight isolate mx-auto mt-43 translate-x-140 -rotate-[6.2deg] text-left font-black uppercase"
 >
 	<p in:fade={{ delay: 750 }} class="trim text-shadow text-4xl text-white">A full-stack guy:</p>
-	<p in:fade={{ delay: 1000 }} class="trim text-4xl">From Cloud & DB, to UX & User</p>
+	<p in:fade={{ delay: 1000 }} class="trim font-merriweather text-4xl">
+		From Cloud & DB, to UX & User
+	</p>
 </div>
 <article class="mx-auto mt-20 w-[65rch]">
 	<Dinkus />
-	<p>
-		You can find out more about me <a href="/about">here</a>, but If you want to tuck into some good
-		stuff, I would recommend reading about my <a href="/">site-design breakdown</a>, or a short
-		entry about my <a href="location">location</a>
-	</p>
+	<div class="wrap mb-4 translate-x-10">
+		<p {@attach poly_bg} class="-mx-8 bg-white p-8">
+			You can find out more about me <a href="/about">here</a>, but If you want to tuck into some
+			good stuff, I would recommend reading about my <a href="/">site-design breakdown</a>, or a
+			short entry about my new <a href="/journal/articles/kia-ora">location</a>
+		</p>
+	</div>
+	<div class="wrap mb-4 -translate-x-10">
+		<p {@attach poly_bg} class="-mx-8 bg-white p-8">
+			I write articles related to software development and web technologies. You can read my latest <a
+				href="/latest">here</a
+			>
+		</p>
+	</div>
+	<div class="wrap translate-x-8">
+		<p {@attach poly_bg} class="-mx-8 bg-white p-8">
+			If you want something to listen to on your run, or in the car. I interview former collegues,
+			mentors, and collaborators and you can listen <a href="latest/interview">here</a>
+		</p>
+	</div>
 </article>
 
 <style>
@@ -67,5 +84,8 @@
 	.byline {
 		width: fit-content;
 		translate: 240px 41px;
+	}
+	.wrap {
+		filter: drop-shadow(0 10px 10px rgb(0 0 0 / 8%));
 	}
 </style>

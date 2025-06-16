@@ -32,6 +32,14 @@
 <div
 	class="max-auto pointer-events-none fixed left-1/2 h-screen w-[71ch] -translate-x-1/2 border-r border-l border-dashed border-black/30"
 ></div>
+<main></main>
 <SiteHeader />
 {@render children()}
 <SiteFooter />
+
+<style>
+	main {
+		display: grid;
+		grid-template-columns: repeat(5);
+	}
+</style>

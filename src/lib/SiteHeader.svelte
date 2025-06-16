@@ -13,8 +13,7 @@
 	let menu: { title: string; link: string }[] = [
 		{ title: 'Home', link: '/' },
 		{ title: 'About', link: '/about' },
-		{ title: 'Journal', link: '/journal' },
-		{ title: 'Code', link: '/code' },
+		{ title: 'Posts', link: '/posts' },
 	];
 </script>
 
