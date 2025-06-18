@@ -9,6 +9,8 @@
 	import '../app.css';
 	import { onNavigate } from '$app/navigation';
 	import SiteFooter from '$lib/SiteFooter.svelte';
+	import MainLayout from '$lib/layouts/MainLayout.svelte';
+	import Splash from '$lib/Canvas/Splash.svelte';
 
 	let { children } = $props();
 	let menu: { title: string; link: string }[] = [
@@ -28,18 +30,11 @@
 	});
 </script>
 
-<div class="pointer-events-none fixed inset-0 bg-[url('/noise.png')] opacity-[0.04]"></div>
-<div
-	class="max-auto pointer-events-none fixed left-1/2 h-screen w-[71ch] -translate-x-1/2 border-r border-l border-dashed border-black/30"
-></div>
-<main></main>
-<SiteHeader />
-{@render children()}
-<SiteFooter />
+<MainLayout>
+	<SiteHeader />
+	{@render children()}
+	<SiteFooter />
+</MainLayout>
 
 <style>
-	main {
-		display: grid;
-		grid-template-columns: repeat(5);
-	}
 </style>

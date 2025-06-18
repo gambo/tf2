@@ -10,7 +10,7 @@
 	import Footlink from '$lib/Footlink.svelte';
 	import Footnotes from '$lib/Footnotes.svelte';
 	import Footnote from '$lib/Footnote.svelte';
-	import Splash from '$lib/Splash.svelte';
+	import Splash from '$lib/Canvas/Splash.svelte';
 	import type { Snippet } from 'svelte';
 	import type { Attachment } from 'svelte/attachments';
 	type Props = {

@@ -1,6 +1,6 @@
 <script lang="ts">
 	import type { Snippet } from 'svelte';
-	import Splash from '$lib/Splash.svelte';
+	import Splash from '$lib/Canvas/Splash.svelte';
 
 	type Props = {
 		children: Snippet;

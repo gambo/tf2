@@ -9,7 +9,5 @@
 	let { data, children }: Props = $props();
 </script>
 
-<pre>{JSON.stringify(data, null, 2)}</pre>
-
 <style lang="postcss">
 </style>

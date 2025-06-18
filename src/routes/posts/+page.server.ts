@@ -11,10 +11,11 @@ const sitetags: string[] = [
 ] as const
 export async function load({ url }) {
     const tag = url.searchParams.get('tag')
-    const entries: ImportEntries = import.meta.glob<ImportMeta>('/src/routes/posts/articles/**/+page.svelte')
+    const entries: ImportEntries = import.meta.glob<ImportMeta>('/src/routes/posts/**/+page.svelte')
     const menu: { url: string, meta: SiteMeta }[] = []
     for (const entry of Object.entries(entries)) {
         const { meta } = await entry[1]()
+        if (!meta) continue
         const posts = {
             url: entry[0].replace('+page.svelte', '').replace('/src/routes/', ''),
             meta: meta

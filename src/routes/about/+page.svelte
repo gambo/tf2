@@ -3,7 +3,7 @@
 	import { scrollY } from 'svelte/reactivity/window';
 
 	import Terminal from './Terminal.svelte';
-	import Splash from '$lib/Splash.svelte';
+	import Splash from '$lib/Canvas/Splash.svelte';
 	import type { Snippet } from 'svelte';
 	import Personal from './Personal.svelte';
 	import Typewriter from './Typewriter.svelte';

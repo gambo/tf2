@@ -2,7 +2,7 @@
 	import type { Snippet } from 'svelte';
 	import type { PageData } from './$types';
 	import JournalPeek from '$lib/JournalPeek.svelte';
-	import Splash from '$lib/Splash.svelte';
+	import Splash from '$lib/Canvas/Splash.svelte';
 
 	type Props = {
 		data: PageData;

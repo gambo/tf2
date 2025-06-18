@@ -2,7 +2,7 @@
 	import Dinkus from '$lib/Dinkus.svelte';
 	import Logo from '$lib/Logo.svelte';
 	import Socials from '$lib/Socials.svelte';
-	import Splash from '$lib/Splash.svelte';
+	import Splash from '$lib/Canvas/Splash.svelte';
 </script>
 
 <div class="pile">

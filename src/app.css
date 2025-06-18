@@ -70,6 +70,17 @@ html {
 	color: var(--color-front);
 	font-size: 18px;
 }
+:root {
+	--spring-easing: linear(
+		0,
+		0.93834 16.722%,
+		1.14934 24.312%,
+		1.15356 29.933%,
+		0.9766 50.995%,
+		0.99996
+	);
+	--spring-duration: 0.7s;
+}
 
 article {
 	--computed-line-height: calc(var(--font-size) * var(--line-height));

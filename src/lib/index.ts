@@ -1,7 +1,6 @@
 // place files you want to import through the `$lib` alias in this folder.
 
 import type { Attachment } from "svelte/attachments";
-export { default as Picsum } from './Footnote.svelte';
 
 export const poly_clip: Attachment<HTMLElement> = (node) => {
     const bound = (b: number) => Math.floor(Math.random() * b);
