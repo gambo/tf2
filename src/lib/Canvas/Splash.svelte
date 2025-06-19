@@ -23,17 +23,19 @@
 
 <style>
 	.splash {
+		--color1: var(--color, red);
+		--color2: hsl(from var(--color1) h calc(s + 10) calc(l + 10));
 		--background: repeating-linear-gradient(
 			calc(90deg - var(--rotation, 10deg)),
 			var(--color1) 0px,
 			var(--color2) var(--texture-length, 20px),
 			transparent var(--texture-length, 20px)
 		);
-		--color1: var(--color, red);
-		--color2: hsl(from var(--color1) h calc(s + 10) calc(l + 10));
 		background: var(--background);
 		height: var(--height);
 		rotate: var(--rotation);
+		top: var(--top);
+		position: absolute;
 		translate: -25vw;
 		width: 150vw;
 	}

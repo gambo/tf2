@@ -1,4 +1,10 @@
 <script lang="ts">
+	import type { ClassValue } from 'svelte/elements';
+
+	type Props = {
+		class: ClassValue;
+	};
+	let { class: classes }: Props = $props();
 </script>
 
 <svg
@@ -7,7 +13,7 @@
 	viewBox="0 0 19 18"
 	fill="var(--color-accent)"
 	xmlns="http://www.w3.org/2000/svg"
-	class="transition-all group-hover:scale-80"
+	class={classes}
 >
 	<path
 		fill-rule="evenodd"

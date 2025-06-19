@@ -6,11 +6,10 @@
 	import '@fontsource/fjalla-one';
 	import '@fontsource-variable/merriweather';
 	import '@fontsource-variable/geist-mono';
-	import '../app.css';
+	import '../../app.css';
 	import { onNavigate } from '$app/navigation';
 	import SiteFooter from '$lib/SiteFooter.svelte';
 	import MainLayout from '$lib/layouts/MainLayout.svelte';
-	import Splash from '$lib/Canvas/Splash.svelte';
 
 	let { children } = $props();
 	let menu: { title: string; link: string }[] = [
@@ -32,7 +31,9 @@
 
 <MainLayout>
 	<SiteHeader />
-	{@render children()}
+	<main>
+		{@render children()}
+	</main>
 	<SiteFooter />
 </MainLayout>
 

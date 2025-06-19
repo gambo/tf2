@@ -9,9 +9,9 @@
 
 <a
 	href="/"
-	class="focus:outline-accent flex items-center gap-1 outline-offset-4 transition-all outline-none {classes}"
+	class="focus:outline-accent group flex items-center gap-1 pl-2 outline-offset-4 transition-all outline-none {classes}"
 >
-	<Logo />
+	<Logo class="transition-all group-hover:-rotate-90" />
 	<div class="font-inter-tight text-front grid gap-[3px] text-sm tracking-wider uppercase">
 		<span class="trim">Shaun</span>
 		<span class="trim">Richardson</span>

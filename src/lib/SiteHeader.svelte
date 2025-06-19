@@ -13,11 +13,9 @@
 
 <header class="flex grid-cols-subgrid items-center justify-between">
 	<LogoLink />
+	<Socials />
 	<Menu />
 </header>
-<div style:grid-area="main / right-gutter" class="items-center">
-	<Socials />
-</div>
 
 <style>
 	header {
