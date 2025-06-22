@@ -62,12 +62,17 @@ article {
 	line-height: var(--line-height);
 	text-wrap: pretty;
 	:is(h1, h2, h3, h4, h5, h6) {
+		text-box-edge: cap alphabetic;
+		text-box-trim: trim-both;
 		&:target {
-			background: lightgoldenrodyellow;
+			--color: hsl(from var(--color-accent) h s l / 30%);
+			background: repeating-linear-gradient(
+				45deg,
+				var(--color) 1px,
+				transparent 2px,
+				transparent 4px
+			);
 			border: 1px dashed;
-			margin: -1rem;
-			margin-bottom: 2rem;
-			padding: 1rem;
 		}
 	}
 	h1 {
@@ -162,4 +167,50 @@ article {
 		var(--color2) 4px,
 		transparent 4px
 	);
+}
+.diags {
+	--color: hsl(from var(--color-accent) h s l / 10%);
+	background-image: repeating-linear-gradient(
+		45deg,
+		var(--color) 0px,
+		var(--color) 1px,
+		transparent 2px,
+		transparent 4px
+	);
+	padding: 1rex 2rch;
+}
+
+.rainbow {
+	position: relative;
+	&:before {
+		content: ' ';
+		position: absolute;
+		inset: 0;
+		filter: blur(80px);
+		border-radius: inherit;
+		z-index: 1;
+		mix-blend-mode: overlay;
+	}
+	&:hover {
+		&::before {
+			animation-direction: normal;
+			animation-duration: 8s;
+			animation-fill-mode: forwards;
+			animation-iteration-count: infinite;
+			animation-name: rotate-color;
+			background: linear-gradient(var(--color-degree) in oklch longer hue, violet 0% 100%);
+			opacity: 60%;
+		}
+	}
+}
+@property --color-degree {
+	syntax: '<angle>';
+	inherits: false;
+	initial-value: 0deg;
+}
+
+@keyframes rotate-color {
+	to {
+		--color-degree: 360deg;
+	}
 }

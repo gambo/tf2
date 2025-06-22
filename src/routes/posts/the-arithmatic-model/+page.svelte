@@ -4,7 +4,7 @@
 		ident: 'arithmatic',
 		title: 'Simple math leads to big wins if you go far enough',
 		date: new Date('12 June 2025'),
-		tags: ['code'],
+		tags: ['development', 'programming'],
 		image,
 		alt: "A view of New Zealand's beautiful landscape featuring a mountain covered in green trees and topped with a long white cloud. A man stands in a field looking at it in the distance.",
 	};
@@ -17,6 +17,7 @@
 	import Footnote from '$lib/Footnote.svelte';
 	import Article from '$lib/Article.svelte';
 	import Code from '$lib/Code.svelte';
+	import type { SiteMeta } from '../types';
 
 	interface User {
 		username: string;
@@ -35,6 +36,9 @@
 	const a = addCustomerDetails(user, { bankAccountNumber: 123, bankName: 'Standard' });
 </script>
 
+<div
+	class="absolute top-1/4 right-0 bottom-1/4 left-0 bg-[url(/math.svg)] [background-size:20px]"
+></div>
 <Article {...meta}>
 	{#snippet figcaption()}
 		The image is intuitive for most of us. Take a smiley face, add a sad face, and you get a neutral

@@ -4,7 +4,7 @@
 		ident: 'big-forms',
 		title: 'The Not-So-Little problems with Big forms',
 		date: new Date('11 June 2025'),
-		tags: ['code'],
+		tags: ['programming'],
 		image,
 		alt: "A view of New Zealand's beautiful landscape featuring a mountain covered in green trees and topped with a long white cloud. A man stands in a field looking at it in the distance.",
 	};
@@ -16,6 +16,7 @@
 	import Back from '$lib/icons/Back.svelte';
 	import Footnote from '$lib/Footnote.svelte';
 	import Article from '$lib/Article.svelte';
+	import type { SiteMeta } from '../types';
 </script>
 
 <Article {...meta}>

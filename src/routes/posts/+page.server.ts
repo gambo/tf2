@@ -1,37 +1,33 @@
-import type { Component } from "svelte"
+import type { ImportMeta, MenuEntry } from './types.d.ts'
 
-type ImportMeta = { default: Component, meta: SiteMeta }
-type ImportEntries = Record<string, () => Promise<ImportMeta>>
-
-const sitetags: string[] = [
-    'career',
-    'code',
-    'design',
-    'personal'
-] as const
-export async function load({ url }) {
-    const tag = url.searchParams.get('tag')
-    const entries: ImportEntries = import.meta.glob<ImportMeta>('/src/routes/posts/**/+page.svelte')
-    const menu: { url: string, meta: SiteMeta }[] = []
-    for (const entry of Object.entries(entries)) {
-        const { meta } = await entry[1]()
-        if (!meta) continue
-        const posts = {
-            url: entry[0].replace('+page.svelte', '').replace('/src/routes/', ''),
-            meta: meta
-        }
-        if (tag) {
-            if (sitetags.includes(tag)) {
-                const tags: string[] = meta.tags
-                if (tags.includes(tag)) {
-                    menu.push(posts)
-                }
+async function* get_articles() {
+    const files = import.meta.glob<ImportMeta>('/src/routes/posts/**/**/+page.svelte')
+    for await (const [key, value] of Object.entries(files)) {
+        yield {
+            done: false, value: {
+                url: key,
+                meta: (await value()).meta
             }
-        } else {
-
-            menu.push(posts)
         }
     }
-    console.log({ menu })
-    return { menu: menu.sort((x, y) => x.meta.date <= y.meta.date ? 1 : -1) }
+    return { done: true, value: undefined }
+}
+
+const prepareUrl = (url: string) => {
+    return url
+        .replaceAll('+page.svelte', '')
+        .replaceAll('/src/routes/', '')
+}
+
+export async function load() {
+    const articles = get_articles()
+    const menu: MenuEntry[] = []
+    for await (const { value: { url, meta } } of articles) {
+        if (!meta) continue
+        menu.push({
+            url: prepareUrl(url),
+            meta,
+        })
+    }
+    return { menu }
 }

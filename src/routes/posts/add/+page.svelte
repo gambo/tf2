@@ -4,7 +4,7 @@
 		ident: 'add',
 		title: 'Anxiety-driven Development',
 		date: new Date('11 June 2025'),
-		tags: ['career'],
+		tags: ['development', 'programming'],
 		image,
 		alt: 'A splash of water, with a dark tone giving a sinister, drowning feeling.',
 	};
@@ -16,6 +16,7 @@
 	import Back from '$lib/icons/Back.svelte';
 	import Footnote from '$lib/Footnote.svelte';
 	import Article from '$lib/Article.svelte';
+	import type { SiteMeta } from '../types';
 </script>
 
 <Article {...meta}>

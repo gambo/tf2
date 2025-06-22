@@ -14,9 +14,9 @@
 
 <style>
 	h1 {
-		text-wrap: pretty;
 		line-height: 1.2;
-		margin-inline: -20rem;
+		margin-inline: -22rch;
 		text-align: center;
+		text-wrap: balance;
 	}
 </style>

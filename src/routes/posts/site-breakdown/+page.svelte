@@ -4,7 +4,7 @@
 		ident: 'sitebreakdown',
 		title: 'Site Design Breakdown',
 		date: new Date('15 June 2025'),
-		tags: ['code'],
+		tags: ['design'],
 		image,
 		alt: 'A snippet of an open code editor with the code of the current website.',
 	};
@@ -18,6 +18,7 @@
 	import Article from '$lib/Article.svelte';
 	import Code from '$lib/Code.svelte';
 	import Summary from '$lib/Summary.svelte';
+	import type { SiteMeta } from '../types';
 </script>
 
 <Article {...meta}>
@@ -26,12 +27,7 @@
 	{/snippet}
 	{#snippet bodytext()}
 		<Summary>
-			<li>
-				I rely on my favourite framework Svelte/Kit because its so flexible, and gets out the way
-			</li>
-			<li>
-				This site uses 1 dependancy to highlight code. Everything else is hadncrafted from scratch
-			</li>
+			<li>Svelte/Kit is my goto</li>
 			<li>I document a few advanced CSS tips used in the site</li>
 		</Summary>
 		<h2>The beginning is never easy</h2>
@@ -39,7 +35,7 @@
 			It's been some time since I've had the time to build my own site. My last 2 roles weren't
 			particularly forgiving and free time was quite precious. I was a bit lost for design ideas. I
 			tried about a dozen designs, and nothing I came up with felt fresh. I definitely wanted
-			something with an edge.
+			something with an edge. I always use Svelte/Kit because it is <a href="/">quality</a>
 		</p>
 		<p></p>
 		<Dinkus />

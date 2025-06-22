@@ -33,7 +33,7 @@
 		display: flex;
 		font-size: 0.7rem;
 		gap: 1rch;
-		margin-bottom: 1rex;
+		margin-block: 4rex 1rex;
 		li {
 			align-items: center;
 			border-radius: 999rem;

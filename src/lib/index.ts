@@ -2,6 +2,16 @@
 
 import type { Attachment } from "svelte/attachments";
 
+export const sitetags = new Map([
+    ['design', { color: 'var(--color-red-100)' }],
+    ['development', { color: 'var(--color-green-500)' }],
+    ['programming', { color: 'var(--color-blue-500)' }],
+    ['experiment', { color: 'var(--color-teal-500)' }],
+    ['interview', { color: 'var(--color-violet-500)' }],
+    ['personal', { color: 'var(--color-orange-500)' }],
+    ['design', { color: 'var(--color-yellow-500)' }],
+] as const)
+console.log('sitetags', sitetags);
 export const poly_clip: Attachment<HTMLElement> = (node) => {
     const bound = (b: number) => Math.floor(Math.random() * b);
     const low = () => bound(3);

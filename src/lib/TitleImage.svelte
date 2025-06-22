@@ -14,8 +14,10 @@
 	class="relative isolate z-10"
 	style="view-transition-name: image-{ident}; --image: url({src})"
 >
-	<div class="wrap">
-		<div class="titleimage aspect-[16/7] [background-image:var(--image)] bg-cover bg-center"></div>
+	<div class="wrap overflow-clip">
+		<div
+			class="titleimage aspect-[16/7] [background-image:var(--image)] bg-cover bg-center transition-all hover:scale-105"
+		></div>
 	</div>
 	<!-- <img {src} {alt} /> -->
 	<figcaption>

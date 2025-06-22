@@ -16,9 +16,10 @@
 	import Footlink from '$lib/Footlink.svelte';
 	import Footnote from '$lib/Footnote.svelte';
 	import Article from '$lib/Article.svelte';
-	import Toc from '$lib/TOC.svelte';
+	import type { SiteMeta } from '../types';
 </script>
 
+<div class="absolute inset-[15rem_0_80%_0] w-[200vw]"></div>
 <Article {...meta}>
 	{#snippet figcaption()}
 		A still from the beautiful short film
@@ -31,15 +32,11 @@
 	{#snippet bodytext()}
 		<h2>A New Home</h2>
 		<p class="cap">
-			New Zealand is my new home! I have family here and many good friends, so it was really only a
-			matter of time. Flying from South Africa, through Hong Kong and landing in Auckland was a
-			journey I'll never forget. New Zealand is a truly beautiful place&mdash;<Footlink id="1" /> and
-			the people within have a spirit to match. They are warm, humourous and genuinly open.
-		</p>
-		<p>
-			These moments always promote a self-assessment of sorts, like pruning an overgrown fruit
-			tree&mdash;tying wayward branches upright and eliminating weaker branches to divert growth to
-			the preferred ones.
+			New Zealand is my new home! It's been a long journey, and it's been very difficult. For the
+			longest time, my wife and I have had this dream to be a part of New Zealand and her people.
+			Flying from South Africa, through Hong Kong and landing in Auckland was a journey I'll never
+			forget. New Zealand is a truly beautiful place&mdash;<Footlink id="1" /> and the people within
+			have a spirit to match. They are warm, humourous and genuinly open.
 		</p>
 		<Dinkus />
 		<h3>What's next?</h3>

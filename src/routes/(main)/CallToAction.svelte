@@ -1,29 +1,83 @@
 <script lang="ts">
-	import type { Snippet } from 'svelte';
 	import Linkdin from '$lib/icons/Linkdin.svelte';
-	type Props = {
-		figcaption: Snippet;
-		bodytext: Snippet;
-		footnotes: Snippet;
-	} & SiteMeta;
+	import Close from '$lib/icons/Close.svelte';
 </script>
 
 <article>
-	<p class="cap">
-		You can learn more about me by reading what I write on here. I love designing and developing
-		software solutions for the web. The whole excercise is intensily rewarding for me. I have met
-		amazing people along way.
+	<p>
+		I make high quality applications for the web. I have worked across the full stack for many years
+		in a variety of languages. You can read about my new <a href="/#">Home</a>. I write about
+		<a href="/">Design</a>, <a href="/">Development</a> &
+		<a href="/">Programming</a>. You can read my <a href="/">code</a> and
+		<a href="/">Experiments</a> I also like to <a href="/">interview</a> colleagues and collaborators
+		I respect.
 	</p>
-	<p>You can learn about me a bit more by reading what I write</p>
+	<div class="cta my-8 flex justify-center">
+		<button
+			class="inline-flex items-center gap-1 pr-4 text-sm"
+			commandfor="contact"
+			command="show-modal"
+			type="button"
+		>
+			<span class="rounded-full bg-slate-600 p-1 text-white"><Linkdin class="" /></span>
+			Contact me
+		</button>
+	</div>
+	<p>
+		If you will let me, I will give a talk to your employee's about my favourite tool Svelte/Kit and
+		<a href="/">why</a> it is the <a href="/">most-loved&ast;</a> framework
+	</p>
 </article>
 
-<a href="/" class="inline-flex items-center gap-1 pr-4 text-xs">
-	<span class="rounded-full bg-slate-600 p-1 text-white"><Linkdin class="" /></span>
-	Contact me on Linked In</a
->
+<dialog id="contact" class="fixed h-1/2 w-1/2 translate-x-1/2 translate-y-1/2">
+	<button class="absolute top-4 right-4" commandfor="contact" command="close"
+		><Close class="text-slate-700" /></button
+	>
+	<article>
+		<h2>I am available to work.</h2>
+	</article>
+</dialog>
 
 <style>
-	a {
+	dialog {
+		/* Exit Stage To */
+		transform: translateY(-20px);
+
+		&,
+		&::backdrop {
+			transition:
+				display 0.25s allow-discrete,
+				overlay 0.25s allow-discrete,
+				opacity 0.25s ease,
+				transform 0.25s ease;
+
+			/* Exit Stage To */
+			opacity: 0;
+		}
+
+		/* On Stage */
+		&[open] {
+			opacity: 1;
+			transform: translateY(0px);
+
+			&::backdrop {
+				opacity: 0.8;
+			}
+		}
+
+		/* Enter Stage From */
+		@starting-style {
+			&[open],
+			&[open]::backdrop {
+				opacity: 0;
+			}
+
+			&[open] {
+				transform: translateY(20px);
+			}
+		}
+	}
+	.cta button {
 		background: #242424;
 		border-radius: 100rem;
 		color: rgb(255 255 255 / 90%);

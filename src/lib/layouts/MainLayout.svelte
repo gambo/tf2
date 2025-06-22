@@ -1,5 +1,7 @@
 <script lang="ts">
 	import Canvas from '$lib/Canvas/Canvas.svelte';
+	import SiteFooter from '$lib/SiteFooter.svelte';
+	import SiteHeader from '$lib/SiteHeader.svelte';
 	import type { Snippet } from 'svelte';
 
 	type Props = {
@@ -9,10 +11,14 @@
 </script>
 
 <Canvas></Canvas>
-<div class="layout overflow-hidden">
+<div class="mx-auto w-[66rch]">
+	<SiteHeader></SiteHeader>
+</div>
+<div class="layout">
 	<div class="main">
 		{@render children()}
 	</div>
+	<SiteFooter></SiteFooter>
 </div>
 
 <style lang="postcss">

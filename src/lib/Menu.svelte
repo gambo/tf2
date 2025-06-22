@@ -1,7 +1,6 @@
 <script lang="ts">
 	let menu: { title: string; link: string }[] = [
 		{ title: 'Home', link: '/' },
-		{ title: 'About', link: '/about' },
 		{ title: 'Posts', link: '/posts' },
 	];
 </script>
