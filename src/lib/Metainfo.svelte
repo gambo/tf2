@@ -1,4 +1,5 @@
 <script lang="ts">
+	import type { SiteDate, SiteTags } from '../routes/posts/types';
 	import Calendar from './icons/Calendar.svelte';
 	import Tags from './icons/Tags.svelte';
 
@@ -17,7 +18,7 @@
 	</span>
 	<span class="text-front flex items-center gap-1">
 		<Tags />
-		<ul>
+		<ul class="flex gap-1">
 			{#each tags as tag}
 				<li data-tag={tag}>#{tag}</li>
 			{/each}
@@ -30,7 +31,7 @@
 		font-family: var(--font-merriweather);
 		align-items: center;
 		color: #777;
-		display: flex;
+		display: grid;
 		font-size: 0.7rem;
 		gap: 1rch;
 		margin-block: 4rex 1rex;

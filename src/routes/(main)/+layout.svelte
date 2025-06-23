@@ -22,9 +22,7 @@
 </script>
 
 <MainLayout>
-	<main>
-		{@render children()}
-	</main>
+	{@render children()}
 </MainLayout>
 
 <style>

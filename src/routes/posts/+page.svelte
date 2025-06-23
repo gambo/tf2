@@ -14,12 +14,12 @@
 <h2
 	class="font-fjalla isolate mx-auto mt-8 mb-4 w-[65rch] px-2 text-3xl text-shadow-[2px_2px_white]"
 >
-	Posts
+	Site Content
 </h2>
 {#if sitetags}
 	{#each sitetags.entries() as [tag, { color }]}
 		<span
-			style="background: {color}"
+			style="color: {color}; background-color: hsl(from {color} h s l / 20%)"
 			class="font-inter-tight rounded-full px-2 py-1 text-xs font-semibold text-white"
 		>
 			{tag}

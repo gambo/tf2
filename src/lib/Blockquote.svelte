@@ -16,14 +16,16 @@
 <style>
 	blockquote {
 		&:before {
-			content: '"';
-			font-size: 4rem;
+			bottom: -2rem;
+			color: var(--color-accent);
+			content: '“';
 			display: block;
+			font-family: var(--font-geist-mono);
+			font-size: 7rem;
+			left: -1.5rem;
+			position: relative;
 			text-box-edge: cap alphabetic;
 			text-box-trim: trim-both;
-			position: relative;
-			bottom: -1rem;
-			color: var(--color-accent);
 		}
 		font-size: 0.8rem;
 		position: relative;

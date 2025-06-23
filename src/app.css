@@ -87,7 +87,7 @@ article {
 		font-family: var(--font-fjalla);
 		font-size: 3rem;
 		font-weight: bold;
-		margin: 4rex 0 2rex 0;
+		margin: 6rex 0 3rex 0;
 		text-shadow: 2px 2px white;
 	}
 	h3 {
@@ -96,6 +96,14 @@ article {
 		font-weight: bold;
 		margin: 6rex 0 3rex 0;
 		text-shadow: 2px 2px white;
+		position: relative;
+		&:after {
+			content: '';
+			filter: blur(80px);
+			background: linear-gradient(36deg in oklch longer hue, violet 0% 100%);
+			inset: 0;
+			position: absolute;
+		}
 	}
 	h4 {
 		font-size: 1.5rem;

@@ -1,6 +1,7 @@
 <script lang="ts">
 	import type { Snippet } from 'svelte';
 	import Metainfo from './Metainfo.svelte';
+	import type { SiteMeta } from '../routes/posts/types';
 
 	type Props = {
 		style?: string;
@@ -10,7 +11,11 @@
 	let { url, style, meta }: Props = $props();
 </script>
 
-<a href={url} style="--image:url({meta.image}); {style}" class="rainbow group">
+<a
+	href={url}
+	style="--image:url({meta.image}); {style}"
+	class="rainbow group border border-slate-900/10 shadow-lg"
+>
 	<div class="flex flex-col gap-4 bg-white p-4">
 		<div class="overflow-clip border">
 			<div
@@ -20,7 +25,7 @@
 		</div>
 		<div>
 			<h2
-				class="font-fjalla min-h-[5rem] text-2xl"
+				class="font-fjalla min-h-[5rem] text-2xl text-balance"
 				style="view-transition-name: header-{meta.ident}"
 			>
 				{meta.title}
@@ -31,7 +36,4 @@
 </a>
 
 <style>
-	.ok:hover {
-		background-size: 200%;
-	}
 </style>

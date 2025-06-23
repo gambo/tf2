@@ -11,7 +11,7 @@
 </script>
 
 <Canvas></Canvas>
-<div class="mx-auto w-[66rch]">
+<div class="mx-auto w-[66rch] overflow-hidden">
 	<SiteHeader></SiteHeader>
 </div>
 <div class="layout">
@@ -34,6 +34,7 @@
 		@media (width <= 590px) {
 			grid-template-columns: 1fr;
 		}
+		overflow: clip;
 	}
 	.main {
 		grid-area: main;

@@ -19,6 +19,10 @@ const prepareUrl = (url: string) => {
         .replaceAll('/src/routes/', '')
 }
 
+const sortByDate = (a: MenuEntry, b: MenuEntry) => {
+    return a.meta.date < b.meta.date ? 1 : -1
+}
+
 export async function load() {
     const articles = get_articles()
     const menu: MenuEntry[] = []
@@ -29,5 +33,5 @@ export async function load() {
             meta,
         })
     }
-    return { menu }
+    return { menu: menu.sort(sortByDate) }
 }

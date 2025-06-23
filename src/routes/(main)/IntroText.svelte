@@ -65,7 +65,7 @@
 		--color1: hsl(16, 100%, 40%);
 		--color2: hsl(from var(--color1) h calc(s + 10) calc(l + 10));
 		--background: repeating-linear-gradient(
-			calc(90deg - var(--rotation)),
+			calc(87deg),
 			var(--color1) 0px,
 			var(--color2) var(--texture-length, 20px),
 			transparent var(--texture-length, 20px)
