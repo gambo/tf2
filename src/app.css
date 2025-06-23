@@ -65,6 +65,7 @@ article {
 		text-box-edge: cap alphabetic;
 		text-box-trim: trim-both;
 		&:target {
+			scroll-margin-block: 2rex;
 			--color: hsl(from var(--color-accent) h s l / 30%);
 			background: repeating-linear-gradient(
 				45deg,
@@ -93,7 +94,7 @@ article {
 		font-size: 2rem;
 		font-family: var(--font-fjalla);
 		font-weight: bold;
-		margin: 4rex 0 1rex 0;
+		margin: 6rex 0 3rex 0;
 		text-shadow: 2px 2px white;
 	}
 	h4 {
@@ -199,7 +200,7 @@ article {
 			animation-iteration-count: infinite;
 			animation-name: rotate-color;
 			background: linear-gradient(var(--color-degree) in oklch longer hue, violet 0% 100%);
-			opacity: 60%;
+			opacity: 80%;
 		}
 	}
 }

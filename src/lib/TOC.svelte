@@ -2,6 +2,7 @@
 	import { slugify } from '$lib';
 	import type { Snippet } from 'svelte';
 	import type { Attachment } from 'svelte/attachments';
+	import type { SiteMeta } from '../routes/posts/types';
 	type Props = {
 		figcaption: Snippet;
 		bodytext: Snippet;
@@ -26,7 +27,7 @@
 	};
 </script>
 
-<aside class="font-inter-tight sticky top-10 float-left -ml-60 w-55 text-right">
+<aside class="font-inter-tight sticky top-10 float-left -ml-65 w-55 text-right">
 	<p class="text-xs tracking-wide text-slate-500 uppercase">Table of Contents</p>
 	<ul {@attach populate}></ul>
 </aside>

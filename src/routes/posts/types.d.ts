@@ -1,6 +1,6 @@
 import { sitetags } from '$lib'
 
-type SiteTags = typeof sitetags extends ReadonlyMap<infer T, unknown> ? T : never
+type SiteTags = typeof sitetags extends Map<infer T, unknown> ? T : never
 type SiteDate = Date
 type SiteMeta = {
     ident: string

@@ -1,8 +1,9 @@
 <script lang="ts">
 	import type { Snippet } from 'svelte';
+	import type { ClassValue } from 'svelte/elements';
 
 	type Props = {
-		class?: string;
+		class?: ClassValue;
 	};
 	let { class: classes }: Props = $props();
 </script>
@@ -17,13 +18,14 @@
 	stroke-width="2"
 	stroke-linecap="round"
 	stroke-linejoin="round"
-	class="lucide lucide-linkedin-icon lucide-linkedin {classes}"
-	><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z" /><rect
-		width="4"
-		height="12"
+	class={classes}
+	><path d="m22 7-8.991 5.727a2 2 0 0 1-2.009 0L2 7" /><rect
 		x="2"
-		y="9"
-	/><circle cx="4" cy="4" r="2" /></svg
+		y="4"
+		width="20"
+		height="16"
+		rx="2"
+	/></svg
 >
 
 <style lang="postcss">
