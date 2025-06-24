@@ -1,13 +1,6 @@
 <script lang="ts">
 	import { slugify } from '$lib';
-	import type { Snippet } from 'svelte';
 	import type { Attachment } from 'svelte/attachments';
-	import type { SiteMeta } from '../routes/posts/types';
-	type Props = {
-		figcaption: Snippet;
-		bodytext: Snippet;
-		footnotes: Snippet;
-	} & SiteMeta;
 
 	const populate: Attachment<HTMLElement> = (node) => {
 		const headings: NodeListOf<HTMLHeadingElement> | undefined = node

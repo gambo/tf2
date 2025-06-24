@@ -17,7 +17,6 @@
 	import Footnote from '$lib/Footnote.svelte';
 	import Article from '$lib/Article.svelte';
 	import type { SiteMeta } from '../types';
-	import maori from './maori.png';
 </script>
 
 <div class="absolute inset-[30%_0_20%_0] bg-[url(./maori.png)] [background-size:400px]"></div>

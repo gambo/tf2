@@ -70,9 +70,6 @@
 		</p>
 	{/snippet}
 	{#snippet footnotes()}
-		<Footnote id="1">
-			Em dash has been placed by me intentionally.
-			<span class="footnote-meta"><a href="#footlink1"><Back /></a></span>
-		</Footnote>
+		<Footnote id="1">Em dash has been placed by me intentionally.</Footnote>
 	{/snippet}
 </Article>

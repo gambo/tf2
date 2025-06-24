@@ -161,11 +161,6 @@ article {
 		border-radius: 0.5rex;
 		padding: 0.2rex 0.2rch;
 	}
-	.footnotes {
-		border-top: 1px solid #ddd;
-		padding-top: 2rex;
-		list-style: decimal-leading-zero;
-	}
 }
 
 .paper {

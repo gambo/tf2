@@ -13,6 +13,7 @@
 		I am based in Tauranga, New Zealand. I am primarily looking for my next long-term role in and
 		around the Bay of Plenty Region, but Iv'e never been one to turn down a great opportunity.
 	</p>
+	<Dinkus />
 	<div class="actionlinks mt-4 grid grid-cols-3 gap-[1rex]">
 		<a
 			class="rainbow flex aspect-[2/1] flex-col items-end justify-between gap-1 p-2 text-right"

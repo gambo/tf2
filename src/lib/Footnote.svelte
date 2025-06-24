@@ -15,12 +15,7 @@
 			{@render children()}
 		</span>
 		<span class="footnote-meta">
-			<a
-				href="#footlink{id}"
-				title="Back to article"
-				class="font-inter-tight color-slate-800 flex items-center gap-1 rounded-md bg-slate-200 p-[1rch] shadow-sm"
-				><Back class="w-3" /></a
-			>
+			<a href="#footlink{id}" title="Back to article"><Back class="w-3" /></a>
 		</span>
 	</div>
 </li>
