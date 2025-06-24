@@ -16,16 +16,6 @@
 >
 	Site Content
 </h2>
-{#if sitetags}
-	{#each sitetags.entries() as [tag, { color }]}
-		<span
-			style="color: {color}; background-color: hsl(from {color} h s l / 20%)"
-			class="font-inter-tight rounded-full px-2 py-1 text-xs font-semibold text-white"
-		>
-			{tag}
-		</span>
-	{/each}
-{/if}
 <div class="-mx-[22rch] grid grid-cols-3 gap-4">
 	{#each data.menu as entry, i}
 		<JournalPeek {...entry} />

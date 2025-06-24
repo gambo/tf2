@@ -8,6 +8,34 @@
 </script>
 
 <article>
+	<h3>Working with me</h3>
+	<p>
+		I am based in Tauranga, New Zealand. I am primarily looking for my next long-term role in and
+		around the Bay of Plenty Region, but Iv'e never been one to turn down a great opportunity.
+	</p>
+	<div class="actionlinks mt-4 grid grid-cols-3 gap-[1rex]">
+		<a
+			class="rainbow flex aspect-[2/1] flex-col items-end justify-between gap-1 p-2 text-right"
+			href="https://www.linkedin.com/in/shaun-richardson-993149165/"
+		>
+			<Linkdin />
+			<span>Connect on LinkedIn</span>
+		</a>
+		<a
+			class="rainbow flex aspect-[2/1] flex-col items-end justify-between gap-1 p-2 text-right"
+			href="/posts/resume"
+		>
+			<Resume />
+			<span>View my Resume</span>
+		</a>
+		<a
+			class="rainbow flex aspect-[2/1] flex-col items-end justify-between gap-1 p-2 text-right"
+			href="mailto:srconstruct@gmail.com"
+		>
+			<Mail />
+			<span>Send me an Email</span>
+		</a>
+	</div>
 	<h3>About me</h3>
 	<p>
 		I build high-quality web applications. I've worked across the full stack for years, using
@@ -25,7 +53,7 @@
 		<a href="/posts?tag=interview">interview</a> colleagues and collaborators I respect.
 	</p>
 	<h3>What people say about me</h3>
-	<div class="-mx-40 grid grid-cols-2 gap-8">
+	<div class="grid grid-cols-1 gap-8">
 		<Blockquote
 			--color="var(--color-accent)"
 			--background-color="#ededed"
@@ -40,9 +68,8 @@
 			--background-color="var(--color-amber-50)"
 			cite="Steven J - Specialist Project Manager, Xpertek Loan finance"
 		>
-			I've had the pleasure of working with Shaun, a highly talented software developer. Shaun
-			brings a rare blend of technical expertise, creativity, and reliability to every project. His
-			problem-solving skills and commitment to quality make him an invaluable collaborator.
+			Shaun has been my closest collaborator for some time now. I know that when I give him a call,
+			Im going to get to the bottom of reasoni
 		</Blockquote>
 		<Blockquote
 			--color="var(--color-emerald-900)"
@@ -53,34 +80,6 @@
 			brings a rare blend of technical expertise, creativity, and reliability to every project. His
 			problem-solving skills and commitment to quality make him an invaluable collaborator.
 		</Blockquote>
-	</div>
-	<h3>Working with me</h3>
-	<p>
-		I am based in Tauranga, New Zealand. I am primarily looking for my next long-term role in and
-		around the Bay of Plenty Region, but Iv'e never been one to turn down a great opportunity.
-	</p>
-	<div class="actionlinks mt-4 grid grid-cols-3 gap-[1rex]">
-		<a
-			class="rainbow flex aspect-[2/1] flex-col items-end justify-between gap-1 p-2 text-right"
-			href="https://www.linkedin.com/in/shaun-richardson-993149165/"
-		>
-			<Linkdin />
-			<span>Connect on LinkedIn</span>
-		</a>
-		<a
-			class="rainbow flex aspect-[2/1] flex-col items-end justify-between gap-1 p-2 text-right"
-			href="/resume"
-		>
-			<Resume />
-			<span>View my Resume</span>
-		</a>
-		<a
-			class="rainbow flex aspect-[2/1] flex-col items-end justify-between gap-1 p-2 text-right"
-			href="/"
-		>
-			<Mail />
-			<span>Send me an Email</span>
-		</a>
 	</div>
 	<h3>Svelte/Kit Expert</h3>
 	<p>
@@ -96,6 +95,7 @@
 <style>
 	.actionlinks a {
 		--linear-color: hsl(from var(--color-accent) h s l / 10%);
+		background-color: white;
 		background-image: linear-gradient(45deg, var(--linear-color) 2px, transparent 2px);
 		background-size: 5px 5px;
 		border: 1px dashed;
@@ -105,7 +105,7 @@
 		text-decoration: none;
 		transition: 0.25s all ease-in-out;
 		&:hover {
-			background: var(--color-accent);
+			background-color: var(--color-accent);
 			color: white;
 			scale: 1.05;
 		}
