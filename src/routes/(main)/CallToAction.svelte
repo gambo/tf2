@@ -69,23 +69,18 @@
 			--background-color="var(--color-amber-50)"
 			cite="Steven J - Specialist Project Manager, Xpertek Loan finance"
 		>
-			Shaun has been my closest collaborator for some time now. I know that when I give him a call,
-			Im going to get to the bottom of reasoni
-		</Blockquote>
-		<Blockquote
-			--color="var(--color-emerald-900)"
-			--background-color="var(--color-emerald-50)"
-			cite="Steven J - Specialist Project Manager, Xpertek Loan finance"
-		>
-			I've had the pleasure of working with Shaun, a highly talented software developer. Shaun
-			brings a rare blend of technical expertise, creativity, and reliability to every project. His
-			problem-solving skills and commitment to quality make him an invaluable collaborator.
+			I have had the pleasure of working with Shaun for over 20 years across multiple projects
+			involving a wide range of objectives. Throughout our collaboration, Shaun has consistently
+			demonstrated professionalism, focus, and a commitment to delivering work of the highest
+			quality. His attention to detail and ability to exceed expectations make him a reliable and
+			valued partner. I would welcome the opportunity to work with him again on any future project.
 		</Blockquote>
 	</div>
 	<h3>Svelte/Kit Expert</h3>
 	<p>
-		I can give a talk to your employee's about my favourite tool Svelte/Kit and
-		<a href="/">why</a> it is the <a href="/">most-loved&ast;</a> framework
+		I can give a talk to your employee's about my favourite tool Svelte/Kit and why it is the <a
+			href="https://2024.stateofjs.com/en-US/libraries/front-end-frameworks/">most-loved&ast;</a
+		> framework
 	</p>
 	<Dinkus />
 	<h3>Network?</h3>
