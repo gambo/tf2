@@ -24,7 +24,7 @@
 		</a>
 		<a
 			class="rainbow flex aspect-[2/1] flex-col items-end justify-between gap-1 p-2 text-right"
-			href="/posts/resume"
+			href="/Resume_shaun.pdf"
 		>
 			<Resume />
 			<span>View my Resume</span>

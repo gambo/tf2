@@ -17,7 +17,6 @@
 	import Code from '$lib/Code.svelte';
 	import Dinkus from '$lib/Dinkus.svelte';
 	import Footlink from '$lib/Footlink.svelte';
-	import Blockquote from '$lib/Blockquote.svelte';
 </script>
 
 <div class="splash absolute inset-[30%_0_20%_0] [background-size:400px]"></div>
@@ -27,7 +26,7 @@
 		effort.
 	{/snippet}
 	{#snippet bodytext()}
-		<h2>What makes me happy with my editor</h2>
+		<h2>Setting up my Editor</h2>
 		<p>
 			I was recently asked by a <a href="https://www.linkedin.com/in/steven-joubert/"
 				>good friend and long-time collaborator</a
@@ -41,6 +40,19 @@
 			Visual Studio Code below, and a few targeted extensions selected to mostly make me think less.
 		</p>
 		<Dinkus />
+		<h3>Getting started</h3>
+		Head over to<a href="https://code.visualstudio.com/Download"
+			>https://code.visualstudio.com/Download</a
+		>
+		and grab the installer that you need for your system. I always try use a commandline package installer.
+		If you are on windows, for example you can jsut use winget:
+		<Code lang="powershell">
+			<pre>{`
+		winget install vscode
+		`.trim()}</pre></Code
+		>
+		Once vscode is installed, you can install extensions from the commandline.
+
 		<h3>GitHub Pull Requests and Issues</h3>
 
 		<Code lang="powershell"
