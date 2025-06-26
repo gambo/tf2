@@ -17,9 +17,10 @@
 	import Footnote from '$lib/Footnote.svelte';
 	import Article from '$lib/Article.svelte';
 	import type { SiteMeta } from '../types';
+	import maori from './maori.png';
 </script>
 
-<div class="absolute inset-[30%_0_20%_0] bg-[url(./maori.png)] [background-size:400px]"></div>
+<div class="splash absolute inset-[30%_0_20%_0] [background-size:400px]"></div>
 <Article {...meta}>
 	{#snippet figcaption()}
 		A still from the beautiful short film
@@ -69,3 +70,9 @@
 		</Footnote>
 	{/snippet}
 </Article>
+
+<style>
+	.splash {
+		background-image: url('./maori.png');
+	}
+</style>

@@ -18,7 +18,6 @@ const prepareUrl = (url: string) => {
         .replaceAll('+page.svelte', '')
         .replaceAll('/src/routes/', '')
 }
-
 const sortByDate = (a: MenuEntry, b: MenuEntry) => {
     return a.meta.date < b.meta.date ? 1 : -1
 }
@@ -28,8 +27,12 @@ export async function load() {
     const menu: MenuEntry[] = []
     for await (const { value: { url, meta } } of articles) {
         if (!meta) continue
+        if (url.includes('/_')) continue
+        const prepared_url = prepareUrl(url)
+        console.log(prepared_url)
+        if (prepared_url.startsWith('_')) continue
         menu.push({
-            url: prepareUrl(url),
+            url: prepareUrl(prepared_url),
             meta,
         })
     }

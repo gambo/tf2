@@ -15,7 +15,9 @@
 			{@render children()}
 		</span>
 		<span class="footnote-meta">
-			<a href="#footlink{id}" title="Back to article"><Back class="w-3" /></a>
+			<a href="#footlink{id}" title="Back to article" class="bg-accent rounded p-1 text-white"
+				><Back class="w-3" /></a
+			>
 		</span>
 	</div>
 </li>
