@@ -16,5 +16,6 @@
 		border-top: 1px solid #ddd;
 		padding-top: 2rex;
 		list-style: decimal-leading-zero;
+		margin: 0.8rem;
 	}
 </style>

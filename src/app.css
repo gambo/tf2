@@ -50,6 +50,7 @@ html {
 	background: var(--color-back);
 	color: var(--color-front);
 	font-size: 18px;
+	scroll-behavior: smooth;
 }
 
 article {
@@ -149,8 +150,6 @@ article {
 			outline: none;
 			background: var(--color-accent);
 			color: white;
-			margin: -0.25rem;
-			padding: 0.25rem;
 		}
 	}
 	code.inline {

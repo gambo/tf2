@@ -15,9 +15,7 @@
 			{@render children()}
 		</span>
 		<span class="footnote-meta">
-			<a href="#footlink{id}" title="Back to article" class="bg-accent rounded p-1 text-white"
-				><Back class="w-3" /></a
-			>
+			<a href="#footlink{id}" title="Back to article" class=""><Back class="w-3" /></a>
 		</span>
 	</div>
 </li>
@@ -33,5 +31,8 @@
 		margin: -1rem;
 		margin-bottom: 2rem;
 		padding: 1rem;
+	}
+	a {
+		background: var(--color-accent);
 	}
 </style>
