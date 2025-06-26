@@ -17,7 +17,6 @@
 	import Footnote from '$lib/Footnote.svelte';
 	import Article from '$lib/Article.svelte';
 	import type { SiteMeta } from '../types';
-	import maori from './maori.png';
 </script>
 
 <div class="splash absolute inset-[30%_0_20%_0] [background-size:400px]"></div>
@@ -70,9 +69,3 @@
 		</Footnote>
 	{/snippet}
 </Article>
-
-<style>
-	.splash {
-		background-image: url('./maori.png');
-	}
-</style>
