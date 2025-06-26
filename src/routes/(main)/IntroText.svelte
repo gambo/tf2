@@ -5,8 +5,8 @@
 	<h1 class="trim sm:text-xs">Hi, I'm Shaun</h1>
 	<div class="pile">
 		<div class="splash -mx-[1000rem]"></div>
-		<img
-			src="/me.png"
+		<enhanced:img
+			src="./me.png"
 			class="transition-all"
 			alt="Shaun, dressed smartly, sitting at a table and smiling"
 		/>

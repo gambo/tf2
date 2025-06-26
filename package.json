@@ -33,6 +33,7 @@
 		"@storybook/addon-vitest": "^9.0.12",
 		"@storybook/sveltekit": "^9.0.12",
 		"@sveltejs/adapter-auto": "^6.0.1",
+		"@sveltejs/enhanced-img": "^0.6.1",
 		"@sveltejs/kit": "^2.22.0",
 		"@sveltejs/vite-plugin-svelte": "^5.1.0",
 		"@tailwindcss/vite": "^4.1.10",
@@ -61,7 +62,8 @@
 	"pnpm": {
 		"onlyBuiltDependencies": [
 			"@tailwindcss/oxide",
-			"esbuild"
+			"esbuild",
+			"sharp"
 		]
 	},
 	"dependencies": {
