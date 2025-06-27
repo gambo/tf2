@@ -11,13 +11,9 @@
 </script>
 
 <script lang="ts">
-	import Dquote from '$lib/Dquote.svelte';
 	import Dinkus from '$lib/Dinkus.svelte';
-	import Back from '$lib/icons/Back.svelte';
-	import Footnote from '$lib/Footnote.svelte';
 	import Article from '$lib/Article.svelte';
 	import Code from '$lib/Code.svelte';
-	import Summary from '$lib/Summary.svelte';
 	import type { SiteMeta } from '../types';
 </script>
 
@@ -50,8 +46,10 @@
 		<p>
 			I like working with textures, and think they arent always as utilizied as they should be, I
 			took a orange with a bit of a punch, and laid on this sort of bamboo style texture on top.
-			<Code lang="css">
-				<pre>
+		</p>
+
+		<Code lang="css">
+			<pre>
 				{`
 	.splash {
 		--color2: hsl(from var(--color) h calc(s + 10) calc(l + 10));
@@ -65,15 +63,40 @@
 	}
 `}
 </pre>
-			</Code>
-		</p>
+		</Code>
 		<h3>Functionality</h3>
 		<p>
 			I wanted my site to have articles I write, and host interviews I give, but mostly I also
-			wanted a way to
+			wanted a way to for the experiments and articles I write to have full web technologies, so I
+			dont actually use any markdown for content rendering. I write regular Svelte template's
+			because its so close to HTML, then if I do need a bit of extra functionality, any article can
+			become it's own mini-playground.
+		</p>
+		<h3>SSR by default</h3>
+		<p>
+			The site is <abbr title="Server Side Rendered">SSR</abbr> by default. This is Svelte/Kit's
+			default and one of the many reasons I reach for SvelteKit first. I feel SSR is just a better
+			default to rely on, It's quicker, has a more reliable delivery and just has fewer downsides in
+			general, <abbr title="Server Side Generated">SSG</abbr> and
+			<abbr title="Single Page Application">SPA</abbr>
+			still have their place, but as I have said in other places on this site
+			<a
+				href="https://www.linkedin.com/pulse/following-people-tools-steven-joubert-vc8lf/?trackingId=vMr7xeGpS2Kljx5tEkjePQ%3D%3D"
+				>and with friends</a
+			>
+			I am not one for fuss.
+		</p>
+		<Dinkus />
+		<h3>Summary</h3>
+		<p>
+			While this site isn't complicated at all, it does have some neat tricks, and It's got the
+			ground work I need for some future teaching I have lined up. What was great about coding this
+			site, was that once i had the definitive idea of what I wanted, it felt like the site sprang
+			to life, nearly fully formed. But going back over the git history, you can see that it was <a
+				href="https://github.com/gambo/tf2/commits/main/">anything but</a
+			>
+			That's when I realized, I was just actually having fun, and the time seemed to fly by.
 		</p>
 	{/snippet}
-	{#snippet footnotes()}
-		<Footnote id="1">Em dash has been placed by me intentionally.</Footnote>
-	{/snippet}
+	{#snippet footnotes()}{/snippet}
 </Article>
