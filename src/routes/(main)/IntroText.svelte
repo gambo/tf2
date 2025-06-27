@@ -7,7 +7,7 @@
 		<div class="splash -mx-[1000rem]"></div>
 		<enhanced:img
 			src="./me.png"
-			class="transition-all"
+			class=""
 			alt="Shaun, dressed smartly, sitting at a table and smiling"
 		/>
 		<h2 class="trim">Senior Software Developer</h2>
