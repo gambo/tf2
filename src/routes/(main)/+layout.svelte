@@ -21,6 +21,10 @@
 	// });
 </script>
 
+<svelte:head>
+	<title>Shaun Richardson</title>
+</svelte:head>
+
 <MainLayout>
 	{@render children()}
 </MainLayout>
