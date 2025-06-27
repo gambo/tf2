@@ -23,6 +23,10 @@
 
 <svelte:head>
 	<title>Shaun Richardson</title>
+	<meta
+		name="description"
+		content="The personal website and Blog of Shaun Richardson, full stack developer"
+	/>
 </svelte:head>
 
 <MainLayout>
