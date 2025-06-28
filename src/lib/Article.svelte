@@ -5,15 +5,22 @@
 	import Signed from '$lib/Signed.svelte';
 	import TitleImage from '$lib/TitleImage.svelte';
 	import TOC from './TOC.svelte';
+	import type { SiteMeta } from '../routes/posts/types';
 	import type { Snippet } from 'svelte';
 	type Props = {
-		figcaption: Snippet;
 		bodytext: Snippet;
+		figcaption: Snippet;
 		footnotes: Snippet;
 	} & SiteMeta;
 
 	let { ident, alt, bodytext, footnotes, figcaption, image, date, tags, title }: Props = $props();
 </script>
+
+<svelte:head>
+	<title>{title}</title>
+	<meta property="og:image" content={image} />
+	<meta property="og:title" content={title} />
+</svelte:head>
 
 <article class="">
 	<div class="relative z-10">
